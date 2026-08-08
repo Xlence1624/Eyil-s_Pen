@@ -26,7 +26,7 @@ const Footer = () => {
 
       </div>
 {/* second */}
-      <div className="text-gray-500 flex flex-wrap justify-between w-full md:w-[45%]">
+      <div className="text-gray-500 flex flex-wrap justify-between w-full md:w-[45%] gap-8">
 {
   footer_data.map(
     (section, index)=> (
