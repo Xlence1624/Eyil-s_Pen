@@ -13,8 +13,8 @@ const Header = () => {
 
 
       </div>
-          <h1 className="text-3xl sm:text-6xl  font-semibold sm:leading-16 text-gray-700 text-center">Eyils own   <span className="text-primary">blogging </span> platform</h1>
-  <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs text-gray-500 italic'> ME!!! …one who communicates better through writing and it is also my escape from anything, everything! Ah! Yes! I do ‘non-fictional fiction’, if there’s anything of sort. No one has a 100% ability to reach out to the world but then, we impact our individual spaces to the degree that we can. … reaching out to a few who in turn will reach out to others. This in mind, we are assured of a ‘close to perfect’ world. I will really appreciate feedbacks/comments.I love us all 💕💕</p>
+          <h1 className="text-3xl sm:text-6xl  font-semibold sm:leading-16 text-gray-700 text-center">Eyils own   <span className="text-primary">blogging </span> platform.</h1>
+  <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs text-gray-500 text-2xl italic'> ME!!! …one who communicates better through writing and it is also my escape from anything, everything! Ah! Yes! I do ‘non-fictional fiction’, if there’s anything of sort. No one has a 100% ability to reach out to the world but then, we impact our individual spaces to the degree that we can. … reaching out to a few who in turn will reach out to others. This in mind, we are assured of a ‘close to perfect’ world. I will really appreciate feedbacks/comments.I love us all 💕💕</p>
   <form className="flex justify-between max-w-lg max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary">
     <input type="text"  placeholder="Search for blogs" className="w-full pl-4 outline-none" />
 
