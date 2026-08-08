@@ -14,11 +14,11 @@ useEffect(() => {
   setHasMounted(true)
 }, [])
 
-useEffect(() => {
-  if (hasMounted && buttonRefs.current[menu]) {
-    buttonRefs.current[menu].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" })
-  }
-}, [menu, hasMounted])
+// useEffect(() => {
+//   if (hasMounted && buttonRefs.current[menu]) {
+//     buttonRefs.current[menu].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" })
+//   }
+// }, [menu, hasMounted])
  useEffect(() => {
     const container = containerRef.current
     const button = buttonRefs.current[menu]
