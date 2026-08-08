@@ -6,8 +6,8 @@ import BlogCard from './BlogCard'
 const Bloglist = () => {
   const [menu, setMenu] = useState("All")
   return (
-    <div>
-      <div className="flex justify-center gap-4 sm:gap-8 my-10 relative">
+    <div className="overflow-x-auto">
+      <div className="flex justify-start gap-4 sm:gap-8 my-10 relative">
 {
   blogCategories.map(
     (item) => (
