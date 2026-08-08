@@ -1,29 +1,48 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect} from 'react'
 import { blog_data, blogCategories } from '../assets/assets'
 import { motion } from "motion/react"
 import BlogCard from './BlogCard'
 
 const Bloglist = () => {
   const [menu, setMenu] = useState("Everything in between")
+  const buttonRefs = useRef({})
+  const [hasMounted, setHasMounted] = useState(false)
+const containerRef = useRef(null)
+
+
+useEffect(() => {
+  setHasMounted(true)
+}, [])
+
+useEffect(() => {
+  if (hasMounted && buttonRefs.current[menu]) {
+    buttonRefs.current[menu].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" })
+  }
+}, [menu, hasMounted])
+ useEffect(() => {
+    const container = containerRef.current
+    const button = buttonRefs.current[menu]
+    if (container && button) {
+      const offsetLeft =
+        button.offsetLeft - container.offsetWidth / 2 + button.offsetWidth / 2
+      container.scrollTo({ left: offsetLeft, behavior: "smooth" })
+    }
+  }, [menu])
   return (
     <div className="overflow-hidden">
-      <div className="flex justify-start sm:justify-center gap-4 sm:gap-8  relative my-3   ">
+      <div className="  ">
 
-        <div className=" overflow-x-auto snap-x snap-mandatory py-5 flex gap-3 px-2">
+        <div className=" relative overflow-x-auto py-5 flex gap-3 px-2 mb-4 justify-center">
 {
   blogCategories.map(
     (item) => (
       <div key={item} className="relative text-xs sm:text-sm ">
         <button
-          ref={(el) => {
-    if (menu === item && el) {
-      el.scrollIntoView({ behavior: "smooth", inline: "center" });
-    }
-  }}
+   ref={(el) => (buttonRefs.current[item] = el)}
         onClick={()=>setMenu(item)}
         className={`cursor-pointer text-gray-500 text-nowrap ${menu === item && "text-white text-nowrap  px-3 pt-0.5"}`}>
           {item}
-          {menu === item && (    <motion.div layoutId='underline' transition={{type: 'sping', stiffness: 500, damping: 30}}className="absolute left-0 right-0 -top-1 sm:-top-0.5 h-7 -z-1 bg-primary rounded-full">
+          {menu === item && (    <motion.div layoutId='underline' transition={{type: 'spring', stiffness: 500, damping: 30}}className="absolute left-0 right-0 -top-1 sm:-top-0.5 h-7 -z-1 bg-primary rounded-full">
 
           </motion.div>)}
       
