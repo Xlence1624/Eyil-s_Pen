@@ -4,17 +4,17 @@ import { motion } from "motion/react"
 import BlogCard from './BlogCard'
 
 const Bloglist = () => {
-  const [menu, setMenu] = useState("All")
+  const [menu, setMenu] = useState("Everything in between")
   return (
-    <div className="overflow-x-auto">
-      <div className="flex justify-start gap-4 sm:gap-8 my-10 relative">
+    <div>
+      <div className="flex justify-center gap-4 sm:gap-8 my-10 relative">
 {
   blogCategories.map(
     (item) => (
       <div key={item} className="relative text-xs sm:text-sm ">
         <button
         onClick={()=>setMenu(item)}
-        className={`cursor-pointer text-gray-500 ${menu === item && "text-white px-4 pt-0.5"}`}>
+        className={`cursor-pointer text-gray-500 ${menu === item && "text-white text-nowrap  px-4 pt-0.5"}`}>
           {item}
           {menu === item && (    <motion.div layoutId='underline' transition={{type: 'sping', stiffness: 500, damping: 30}}className="absolute left-0 right-0 -top-1 sm:-top-0.5 h-7 -z-1 bg-primary rounded-full">
 
