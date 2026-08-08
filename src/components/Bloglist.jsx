@@ -29,8 +29,8 @@ useEffect(() => {
     }
   }, [menu])
   return (
-    <div className="overflow-x-hidden">
-      <div>
+    <div className="">
+      <div className="  ">
 
         <div className=" relative overflow-x-auto py-5 flex gap-3 px-4 mb-4 sm:justify-center">
 {
@@ -38,7 +38,7 @@ useEffect(() => {
     (item) => (
       <div key={item} className="relative text-xs sm:text-sm ">
         <button
-  
+   ref={(el) => (buttonRefs.current[item] = el)}
         onClick={()=>setMenu(item)}
         className={`cursor-pointer text-gray-500 text-nowrap ${menu === item && "text-white text-nowrap  px-3 pt-0.5"}`}>
           {item}
