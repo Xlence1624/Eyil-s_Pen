@@ -32,7 +32,7 @@ useEffect(() => {
     <div className="overflow-hidden">
       <div className="  ">
 
-        <div className=" relative overflow-x-auto py-5 flex gap-3 px-2 mb-4 justify-center">
+        <div className=" relative overflow-x-auto py-5 flex gap-3 px-4 mb-4 sm:justify-center">
 {
   blogCategories.map(
     (item) => (
