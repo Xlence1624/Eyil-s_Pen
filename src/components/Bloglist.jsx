@@ -42,7 +42,7 @@ useEffect(() => {
         onClick={()=>setMenu(item)}
         className={`cursor-pointer text-gray-500 text-nowrap ${menu === item && "text-white text-nowrap  px-3 pt-0.5"}`}>
           {item}
-          {menu === item && (    <motion.div layoutId='underline' transition={{type: 'spring', stiffness: 500, damping: 30}}className="absolute left-0 right-0 -top-1 sm:-top-0.5 h-7 -z-1 bg-primary rounded-full">
+          {menu === item && (    <motion.div layoutId='underline' transition={{type: 'spring', stiffness: 150, damping: 30}}className="absolute left-0 right-0 -top-1 sm:-top-0.5 h-7 -z-1 bg-primary rounded-full">
 
           </motion.div>)}
       
