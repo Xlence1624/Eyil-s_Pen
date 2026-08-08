@@ -11,7 +11,7 @@ const navigate  = useNavigate()
     <div className="flex justify-between items-center py-5 mx-3 sm:mx-20 xl:mx-32  ">
       <div className="flex items-center gap-2 cursor-pointer" onClick={()=>navigate("/")}>
   <img src={assets.eyilslogo} alt="Logo" className="w-8 border border-primary rounded-full sm:w-15 "   />
-  <h1 className="text-2xl sm:text-4xl text-gray-700 font-bold">Eyil's Pen</h1>
+  <h1 className="text-2xl sm:text-4xl text-gray-700 font-bold">Eyilz' Pen</h1>
       </div>
     
       <button  onClick={()=>navigate("/admin")} className="flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5 ">Login
