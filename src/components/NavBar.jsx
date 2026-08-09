@@ -8,7 +8,7 @@ const navigate  = useNavigate()
 
 
   return (
-    <div className="flex justify-between items-center py-5 mx-1 sm:mx-20 xl:mx-32  ">
+    <div className="flex justify-between items-center py-5 mx-1.5 sm:mx-20 xl:mx-32  ">
       <div className="flex items-center gap-1  cursor-pointer" onClick={()=>navigate("/")}>
         
            <img src={assets.eyilslogo} alt="Logo"  className="w-12 sm:w-16 rounded-full  " />
