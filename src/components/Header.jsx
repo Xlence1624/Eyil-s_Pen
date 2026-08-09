@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Header = () => {
   return (
-    <div className='mx-8 sm:mx-16 xl:mx-24 relative flex items-center flex-col  justify-center  sm:mt-10  text-center'>
+    <div className='mx-8 sm:mx-16 xl:mx-24 relative flex items-center flex-col  justify-center mt-18 sm:mt-10  text-center'>
       <div className=" mt-10 mb-8">
 <div className="inline-flex items-center justify-center gap-4 px-6 py-1.5 mb-4 border border-primary/40 bg-primary/10 rounded-full text-sm text-primary">
   <p>Welcome to the Eyilz' Universe</p>
