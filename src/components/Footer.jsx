@@ -14,9 +14,9 @@ const Footer = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-5 py-10 border-b border-gray-500/30 text-gray-500">
     <div className="flex items-center gap-2 cursor-pointer" onClick={()=>navigate("/")}>
-       <div  className="w-8  border bg-primary relative flex items-center justify-center border-primary rounded-full p-5  " >
-             <img src={assets.pen_icon} alt="Logo"  className="absolute " />
-          </div>
+       
+             <img src={assets.eyilslogo} alt="Logo"  className="w-13 rounded-full " />
+          
   <h1 className="text-2xl sm:text-4xl text-gray-700 font-bold">Eyilz' Pen</h1>
       </div>
 

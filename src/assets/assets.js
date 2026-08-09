@@ -32,7 +32,7 @@ import dashboard_icon_2 from './dashboard_icon_2.svg'
 import dashboard_icon_3 from './dashboard_icon_3.svg'
 import dashboard_icon_4 from './dashboard_icon_4.svg'
 import eyilslogo from './eyils_logo.jpg'
-import pen_icon from './pen.png'
+import pen_icon from './whitepen.png'
 
 
 export const assets = {

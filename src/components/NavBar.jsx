@@ -9,10 +9,10 @@ const navigate  = useNavigate()
 
   return (
     <div className="flex justify-between items-center py-5 mx-3 sm:mx-20 xl:mx-32  ">
-      <div className="flex items-center gap-2 cursor-pointer" onClick={()=>navigate("/")}>
-        <div  className="w-8  border bg-primary relative flex items-center justify-center border-primary rounded-full p-5  " >
-           <img src={assets.pen_icon} alt="Logo"  className="absolute " />
-        </div>
+      <div className="flex items-center gap-3   cursor-pointer" onClick={()=>navigate("/")}>
+        
+           <img src={assets.eyilslogo} alt="Logo"  className=" w-16 rounded-full  " />
+        
  
   <h1 className="text-2xl sm:text-4xl text-gray-700 font-bold">Eyilz' Pen</h1>
       </div>
