@@ -87,7 +87,7 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:30:47.920Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Creating an effective <strong>Relationships roadmap"
+        "subTitle": "A story on giving IT another shot"
     },
     {
         "_id": "6805f2aad8f584af5da78d3b",
