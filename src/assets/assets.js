@@ -107,11 +107,11 @@ export const blog_data = [
         "description": "<p> Heyyyyyyy!!!</p><p>It's been long around here. Who missed me?<br>No, sorry. I meant to say 'was I missed?' <br>PFFT! Seems I know the answer already 🙄 I won't take an offence tho, I have been on and off on making a presence here 🚶‍♀️🚶‍♀️</p><p>Anyway.<br>So, all along, I've been trying to get the word that fits my writing.<br>Yeah well, I know I've been calling it 'non fictional.' However, my PUSHERS have been telling me 'IYANU, pick a segment. What exactly do you write on? It makes it easier to rate you and give an honest opinion on your writings.<br>...AND I NEVER HAD THE WORD!!! 🤦🏻‍♀️</p><p>VOILA, I FINALLY DO!!! 💃💃💃💃💃💃💃<br>Drum rollzzzzzz!!! 🥁🥁🥁🥁🥁</p><p>Well, I think the word is #DOCUMENTARY WRITING# 🌚</p><p>Errrrrr... you'll have to decide what kinda documentary this is tho 🤷🏻‍♀️</p><p>Ok, that's all.<br>Ba-bye 🌚🤸🏻‍♀️🤸🏻‍♀️🤸🏻‍♀️🤸🏻‍♀️🤸🏻‍♀️🚶🏻‍♀️<p><p>#EyilzDocumentaries<br>#EyilzStillWrites 🌚<br>#EyilZ ☺️🤗🥰🥰🥰🥰</p>",
         "category": "Life",
         "image": blog_pic_4,
-        "createdAt": "2025-04-21T07:25:22.362Z",
+        "createdAt": "2021-09-25T07:25:22.362Z",
         "updatedAt": "2025-04-24T08:20:36.979Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Tips for Getting the Most Out of Apps and Software"
+        "subTitle": "The joy of keeping record"
     },
     {
         "_id": "6805f307d8f584af5da78d3f",
