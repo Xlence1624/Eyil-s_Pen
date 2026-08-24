@@ -1,3 +1,9 @@
+import { assets } from "../assets/assets";
+import blog_pic_1 from "../assets/blog_pic_1.png"
+import blog_pic_2 from "../assets/blog_pic_2.png"
+import blog_pic_3 from "../assets/blog_pic_3.png"
+
+
 export const articles = [
   {
     id: 1,
@@ -11,7 +17,7 @@ export const articles = [
 
   {
     id: 2,
-    category: "Money",
+    category: "Finance",
     title: "Your Salary Is Not Your Wealth",
     readTime: "7 min read",
     image:
@@ -27,5 +33,26 @@ export const articles = [
     image:
       "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1000&q=85",
     slug: "sometimes-love-is-not-the-problem",
-  },
+  }, {
+    id: 4,
+    category: "Relationships",
+    title: "Sometimes Love Is Not the Problem",
+    readTime: "5 min read",
+  image: blog_pic_3,
+    slug: "sometimes-love-is-not-the-problem",
+  }, {
+    id: 5,
+    category: "Relationships",
+    title: "Sometimes Love Is Not the Problem",
+    readTime: "5 min read",
+  image: blog_pic_2,
+    slug: "sometimes-love-is-not-the-problem",
+  }, {
+    id: 6,
+    category: "Relationships",
+    title: "Sometimes Love Is Not the Problem",
+    readTime: "5 min read",
+    image: blog_pic_1,
+    slug: "sometimes-love-is-not-the-problem",
+  }
 ];
