@@ -28,10 +28,11 @@ Mostly, I’m just observing, questioning, connecting dots, provoking thoughts a
 
 </p> <br/><p>Sometimes, the posts are serious. At other times, they’re cheeky. But they’re definitely intended to make your time here worthwhile; leaving you with a busy mind and thoughts to go back to.
 
-Welcome to my mind, reflected in my words.
+
 
 
             </p>
+          <br/>  <p>Welcome to my mind, reflected in my words.</p>
 
             <span className="signature">
              Eyilzpen

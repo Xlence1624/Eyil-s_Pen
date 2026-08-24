@@ -5,8 +5,8 @@ const navigation = [
   "Relationships",
   "Lifestyle",
   "Work",
-  "Money",
-  "Perspectives",
+  "Finance",
+  '"Everything Inbetween"',
 ];
 
 export default function Header() {

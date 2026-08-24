@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-grid">
           
           <div className="footer-brand">
-            <div className="footer-logo">eyilzpen</div>
+            <div className="footer-logo">Eyilzpen</div>
             <p>
               Faith. Relationships. Lifestyle.
               Work. Finance. Everything in between.
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="copyright">
-          © {currentYear} eyilzpen. All rights reserved.
+          © {currentYear} Eyilzpen. All rights reserved.
         </div>
       </div>
     </footer>

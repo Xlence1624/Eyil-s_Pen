@@ -32,9 +32,9 @@ const categories = [
   },
 
   {
-    id: "money",
+    id: "finance",
     icon: "↗",
-    name: "Money",
+    name: "Finance",
     description:
       "Wisdom for your money and your future.",
   },
@@ -42,7 +42,7 @@ const categories = [
   {
     id: "perspectives",
     icon: "◇",
-    name: "Perspectives",
+    name: ' "Everything Inbetween" ',
     description:
       "Everything else that shapes how we see life.",
   },
