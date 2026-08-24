@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { assets, blog_data, comments_data } from '../assets/assets'
+// import { assets, blog_data, comments_data } from '../assets/assets'
+import { blog_data } from '../data/Articles'
 import {useState} from 'react'
 import NavBar from '../components/NavBar'
 import Moment from 'moment'

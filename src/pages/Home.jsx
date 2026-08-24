@@ -1,15 +1,17 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Header from "../components/Header";
-import { articles } from "../data/Articles";
+import {  blog_data  } from "../data/Articles";
 import About from "../components/About";
 import ArticleCard from "../components/ArticleCard";
 import Newsletter from "../components/NewsLetter"
 import Categories from "../components/Categories";
 import Footer from "../components/Footer"
+import { useNavigate } from "react-router-dom";
 
 
 export default function Home() {
+  const navigate = useNavigate();
 
   return (
     <>
@@ -41,24 +43,24 @@ export default function Home() {
 
               </div>
 
-              <a
-                href="/articles"
-                className="btn btn-outline"
+              <p
+     onClick={() => navigate("/all_article")}
+                className="btn btn-outline cursor-pointer"
               >
                 View Everything
-              </a>
+              </p>
 
             </div>
 
 
             <div className="article-grid">
 
-              {articles.map((article) => (
-                <ArticleCard
-                  article={article}
-                  key={article.id}
-                />
-              ))}
+           {blog_data.map((article) => (
+  <ArticleCard
+    article={article}
+    key={article._id}
+  />
+))}
 
             </div>
 

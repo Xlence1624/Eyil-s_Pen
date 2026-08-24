@@ -31,8 +31,8 @@ export default function Footer() {
             <h3>More</h3>
             <div className="footer-links">
               <a href="#work">Work</a>
-              <a href="#money">Money</a>
-              <a href="#perspectives">Perspectives</a>
+              <a href="#Finance">Finance</a>
+              <a href="#Everything in between"  className="nowrap">Everything in between</a>
             </div>
           </nav>
 
