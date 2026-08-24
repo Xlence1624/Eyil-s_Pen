@@ -33,9 +33,10 @@ import dashboard_icon_3 from './dashboard_icon_3.svg'
 import dashboard_icon_4 from './dashboard_icon_4.svg'
 import eyilslogo from './eyils_logo.jpg'
 import pen_icon from './whitepen.png'
-
+import Iyanu from './Iyanu.jpg'
 
 export const assets = {
+    Iyanu,
     pen_icon,
     eyilslogo,
     facebook_icon,

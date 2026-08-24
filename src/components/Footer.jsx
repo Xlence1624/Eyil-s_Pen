@@ -1,63 +1,58 @@
-import React from 'react'
-import { assets, footer_data } from '../assets/assets'
-import { useNavigate } from 'react-router-dom'
+import React, { useMemo } from "react";
 
-
-
-const Footer = () => {
-  const navigate = useNavigate()
+export default function Footer() {
+  // Performance optimization: Calculate the year only once on mount
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
 
   return (
-    <div className="px-6 md:px-16 lg:px-24 xl:px-32  bg-primary/3  ">
-{/* first */}
-   <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-0 border-b border-gray-500/30 py-10">
-
-      <div className="flex flex-col md:flex-row items-center justify-center gap-5 py-10 border-b border-gray-500/30 text-gray-500">
-    <div className="flex items-center gap-2 cursor-pointer" onClick={()=>navigate("/")}>
-       
-             <img src={assets.eyilslogo} alt="Logo"  className="w-13 rounded-full " />
+    <footer>
+      <div className="container">
+        <div className="footer-grid">
           
-  <h1 className="text-2xl sm:text-4xl text-gray-700 font-bold">Eyilz' Pen</h1>
+          <div className="footer-brand">
+            <div className="footer-logo">eyilzpen</div>
+            <p>
+              Faith. Relationships. Lifestyle.
+              Work. Finance. Everything in between.
+            </p>
+          </div>
+
+          {/* Semantic <nav> added for better SEO and Accessibility */}
+          <nav aria-label="Explore Links">
+            <h3>Explore</h3>
+            <div className="footer-links">
+              <a href="#faith">Faith</a>
+              <a href="#relationships">Relationships</a>
+              <a href="#lifestyle">Lifestyle</a>
+            </div>
+          </nav>
+
+          <nav aria-label="More Links">
+            <h3>More</h3>
+            <div className="footer-links">
+              <a href="#work">Work</a>
+              <a href="#money">Money</a>
+              <a href="#perspectives">Perspectives</a>
+            </div>
+          </nav>
+
+          <nav aria-label="Connect Links">
+            <h3>Connect</h3>
+            <div className="footer-links">
+              {/* Secure links opening in a new tab */}
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="mailto:hello@eyilzpen.com">Email</a>
+            </div>
+          </nav>
+
+        </div>
+
+        <div className="copyright">
+          © {currentYear} eyilzpen. All rights reserved.
+        </div>
       </div>
-
- <p className="max-w-[410px] mt-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta magni quos dolore, numquam totam nisi nostrum aliquam repellendus laboriosam, sunt ipsa, impedit laborum repudiandae accusantium ratione debitis quod quam delectus.
-
-</p>
-
-      </div>
-{/* second */}
-      <div className="text-gray-500 flex flex-wrap justify-between w-full md:w-[45%] gap-8">
-{
-  footer_data.map(
-    (section, index)=> (
-      <div key={index}>
-<h3 className="font-semibold text-base  md:mb-5 mb-2">{section.title}</h3>
-<ul className="text-sm space-y-1">
-  {section.links.map((link, i) => (
-    <li className="" key={i}>
-      <a href="#" className="hover:underline transition">{link}</a>
-    </li>
-  ))}
-</ul>
-      </div>
-    )
-  )
-}
-      </div>
-
-   </div>
-   
-   
-   
-   
-   
-
-
- <p className="py-4 text-center text-sm md:text-base text-gray-500">© 2026 Eyilz' Pen. All rights reserved.</p>
-
-     
-    </div>
-  )
-}
-
-export default Footer
+    </footer>
+  ); 
+} 

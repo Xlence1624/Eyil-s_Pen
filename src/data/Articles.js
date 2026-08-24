@@ -1,0 +1,31 @@
+export const articles = [
+  {
+    id: 1,
+    category: "Faith",
+    title: "What Does It Really Mean to Lead a Family Spiritually?",
+    readTime: "6 min read",
+    image:
+      "https://images.unsplash.com/photo-1548625149-fc4a29cf7092?auto=format&fit=crop&w=1000&q=85",
+    slug: "lead-a-family-spiritually",
+  },
+
+  {
+    id: 2,
+    category: "Money",
+    title: "Your Salary Is Not Your Wealth",
+    readTime: "7 min read",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=85",
+    slug: "your-salary-is-not-your-wealth",
+  },
+
+  {
+    id: 3,
+    category: "Relationships",
+    title: "Sometimes Love Is Not the Problem",
+    readTime: "5 min read",
+    image:
+      "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1000&q=85",
+    slug: "sometimes-love-is-not-the-problem",
+  },
+];
