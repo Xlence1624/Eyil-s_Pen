@@ -677,6 +677,8 @@ input {
 footer {
   padding: 70px 0 30px;
 
+  margin-top: 150px;
+
   color: var(--ivory);
 
   background: var(--deep-forest);

@@ -76,7 +76,7 @@ export default function Home() {
 
         {/* IMAGE STRIP */}
 
-        <section className="image-strip">
+        <section className="image-strip ">
 
           <img
             src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=700&q=80"
@@ -104,10 +104,11 @@ export default function Home() {
           />
 
         </section>
+         <Footer/>
 
       </main>
 
-      <Footer />
+     
 
     </>
   );
