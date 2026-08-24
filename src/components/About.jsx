@@ -45,7 +45,7 @@ Welcome to my mind, reflected in my words.
               src={assets.Iyanu}
               alt="Writer sitting at a desk"
               loading="lazy" 
-              className=" sm:h-full w-100"
+              className=" sm:h-full w-100 object-fit object-top"
             />
 
           </div>
