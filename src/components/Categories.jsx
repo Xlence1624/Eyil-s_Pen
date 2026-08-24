@@ -42,7 +42,7 @@ const categories = [
   {
     id: "perspectives",
     icon: "◇",
-    name: ' "Everything Inbetween" ',
+    name: ' "Everything in between" ',
     description:
       "Everything else that shapes how we see life.",
   },
