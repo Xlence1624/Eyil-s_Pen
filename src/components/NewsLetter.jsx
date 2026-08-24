@@ -65,6 +65,8 @@ export default function Newsletter() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+
+            className="text-black"
           />
 
           <button type="submit">
