@@ -7,10 +7,11 @@ import Newsletter from "../components/NewsLetter"
 import Footer from "../components/Footer";
 
 import { blog_data } from "../data/Articles.js";
+import { useNavigate } from "react-router-dom";
 
 export default function ArticlePage() {
   const { slug } = useParams();
-
+const navigate = useNavigate()
   const article = blog_data[0];
 
   const [progress, setProgress] = useState(0);
@@ -231,8 +232,8 @@ export default function ArticlePage() {
 
           <article className="article-content">
 
-            <div id="beginning">
-<p dangerouslySetInnerHTML={{__html: article.description}} ></p>
+            <div id="beginning" className="text-blue-100">
+<p dangerouslySetInnerHTML={{__html: article.description}}  ></p>
 
               <p className="lead-paragraph">
                 There is something strangely comforting
@@ -262,156 +263,21 @@ export default function ArticlePage() {
             </div>
 
 
-            {/* PULL QUOTE */}
-
-            <blockquote className="article-pullquote">
-
-              <span>
-                “
-              </span>
-
-              <p>
-                Our lives are often less a product of what
-                we decide once and more a product of what
-                we decide repeatedly.
-              </p>
-
-            </blockquote>
+     
 
 
-            {/* SECTION */}
-
-            <section id="repetition">
-
-              <h2>
-                The quiet power of repetition
-              </h2>
-
-              <p>
-                A single decision can change the direction
-                of a life, but repetition determines whether
-                that direction becomes a destination.
-              </p>
-
-              <p>
-                Reading one book does not make you a reader.
-                Going to the gym once does not make you
-                healthy. Having one meaningful conversation
-                does not automatically create a meaningful
-                relationship.
-              </p>
-
-              <p>
-                The ordinary things we repeatedly do
-                eventually become extraordinary forces in
-                our lives.
-              </p>
-
-            </section>
+         
 
 
             
 
 
-            {/* SECTION */}
-
-            <section id="becoming">
-
-              <h2>
-                Who are you becoming?
-              </h2>
-
-              <p>
-                Perhaps one of the better questions we can
-                ask ourselves is not simply, “What do I
-                want?” but “Who am I becoming?”
-              </p>
-
-              <p>
-                The question moves us away from immediate
-                gratification and toward formation.
-              </p>
-
-              <p>
-                It makes us examine our habits, our
-                relationships, our work and even the way we
-                spend our attention.
-              </p>
-
-            </section>
+       
 
 
-            {/* CALLOUT */}
+          
 
-            <div className="article-callout">
-
-              <span className="eyebrow">
-                A thought to carry with you
-              </span>
-
-              <p>
-                Every repeated choice is quietly casting a
-                vote for the person we are becoming.
-              </p>
-
-            </div>
-
-
-            {/* SECTION */}
-
-            <section id="choose">
-
-              <h2>
-                Choose again
-              </h2>
-
-              <p>
-                Maybe the point is not to construct a
-                perfect life.
-              </p>
-
-              <p>
-                Maybe the point is to become increasingly
-                intentional about the life we are
-                constructing.
-              </p>
-
-              <p>
-                Choose the conversation. Choose the
-                discipline. Choose the relationship. Choose
-                the work. Choose the faith.
-              </p>
-
-              <p>
-                Choose the small thing that, repeated long
-                enough, becomes part of who you are.
-              </p>
-
-              <p>
-                Because eventually, the things we repeatedly
-                choose stop feeling like choices.
-              </p>
-
-              <p className="final-line">
-                They become us.
-              </p>
-
-            </section>
-
-
-            {/* END OF ARTICLE */}
-
-            <div className="article-end">
-
-              <span>
-                ✦
-              </span>
-
-              <p>
-                End of essay
-              </p>
-
-            </div>
+            
 
 
             {/* AUTHOR */}
@@ -419,7 +285,7 @@ export default function ArticlePage() {
             <div className="article-author-card">
 
               <div className="large-author-avatar">
-                IyanuOluwa Temitope Araba
+                E
               </div>
 
               <div>
@@ -429,7 +295,7 @@ export default function ArticlePage() {
                 </span>
 
                 <h3>
-                  Eyilzpen
+                  IyanuOluwa T Araba
                 </h3>
 
                 <p>
@@ -467,12 +333,13 @@ export default function ArticlePage() {
                 </h2>
               </div>
 
-              <a
-                href="/articles"
+              <p
+                onClick={()=>navigate("/")}
                 className="btn btn-outline"
+                
               >
                 All essays
-              </a>
+              </p>
 
             </div>
 
