@@ -1205,6 +1205,7 @@ footer h3 {
 
 .article-content {
   min-width: 0;
+  overflow-x: hidden;
 }
 
 .article-content p {
