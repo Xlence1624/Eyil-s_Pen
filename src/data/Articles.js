@@ -93,7 +93,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:30:47.920Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "A story on giving IT another shot"
+        "subTitle": "A story on giving IT another shot",
+         "readTime": "5 Minutes"
     },
     {
         "_id": "6805f2aad8f584af5da78d3b",
@@ -105,7 +106,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:20:36.187Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Learning New Tech to Boost Your Software Career"
+        "subTitle": "Learning New Tech to Boost Your Software Career",
+         "readTime": "12 Minutes"
     },
     {
         "_id": "6805f2e2d8f584af5da78d3d",
@@ -117,7 +119,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:20:36.979Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "The joy of keeping record"
+        "subTitle": "The joy of keeping record",
+         "readTime": "10 Minutes"
     },
     {
         "_id": "6805f307d8f584af5da78d3f",
@@ -128,7 +131,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:32:42.649Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Enhancing Your Skills and Capturing Memorable Moments"
+        "subTitle": "Enhancing Your Skills and Capturing Memorable Moments",
+         "readTime": "10 Minutes"
     },
     {
         "_id": "6805f324d8f584af5da78d41",
@@ -140,7 +144,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T09:32:08.179Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Maximizing Returns by Minimizing Resources in Your Relationships"
+        "subTitle": "Maximizing Returns by Minimizing Resources in Your Relationships",
+         "readTime": "10 Minutes"
     },
     {
         "_id": "68062afc8474108ecb7d7944",
@@ -152,7 +157,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T09:31:52.102Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "What Do They Mean for the Market?"
+        "subTitle": "What Do They Mean for the Market?",
+         "readTime": "10 Minutes"
     },
     {
         "_id": "6809f9f23e075dbeedd23bca",
@@ -164,7 +170,8 @@ export const blog_data = [
         "createdAt": "2025-04-24T08:44:34.937Z",
         "updatedAt": "2025-04-24T09:59:21.299Z",
         "__v": 0,
-        "subTitle": "The New Way of Study: Ditching the Old"
+        "subTitle": "The New Way of Study: Ditching the Old",
+         "readTime": "10 Minutes"
     },
     {
         "_id": "6810995bb5fd81dd0c923d5b",
@@ -176,7 +183,8 @@ export const blog_data = [
         "createdAt": "2025-04-29T09:18:19.662Z",
         "updatedAt": "2025-04-29T10:13:25.035Z",
         "__v": 0,
-        "subTitle": " Why Tourism Matters More Than You Think"
+        "subTitle": " Why Tourism Matters More Than You Think",
+         "readTime": "10 Minutes"
     },
     {
         "_id": "6810a6a2ed57ecc68a99abb3",
@@ -188,7 +196,8 @@ export const blog_data = [
         "createdAt": "2025-04-29T10:14:58.575Z",
         "updatedAt": "2025-04-29T10:14:58.575Z",
         "__v": 0,
-        "subTitle": "Navigating the Future Responsibly"
+        "subTitle": "Navigating the Future Responsibly",
+         "readTime": "10 Minutes"
     },
     
    
