@@ -31,7 +31,7 @@ const [selectedCategory, setSelectedCategory] = useState("everything-in-between"
 
         <Hero />
 
-      <Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
+
         {/* WORTH READING */}
 
         <section className="worth-reading">
@@ -78,7 +78,7 @@ const [selectedCategory, setSelectedCategory] = useState("everything-in-between"
         </section>
 
 
-  
+        <Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
 
         <About />
 
