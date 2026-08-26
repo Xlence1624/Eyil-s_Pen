@@ -963,6 +963,7 @@ footer h3 {
 
 .article-category-row {
   display: flex;
+  
   justify-content: center;
   align-items: center;
 
@@ -1626,10 +1627,11 @@ footer h3 {
     padding: 75px 20px 55px;
   }
 
-  .article-hero h1 {
-    font-size: 57px;
 
-    letter-spacing: -1.5px;
+  .article-hero 
+  h1 {
+  font-size: 48px;
+  letter-spacing: -1.5px;
   }
 
   .article-deck {
