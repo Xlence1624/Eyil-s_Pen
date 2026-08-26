@@ -8,10 +8,19 @@ import Newsletter from "../components/NewsLetter"
 import Categories from "../components/Categories";
 import Footer from "../components/Footer"
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 
 export default function Home() {
   const navigate = useNavigate();
+
+const [selectedCategory, setSelectedCategory] = useState("everything-in-between");
+  const filteredArticles =
+  selectedCategory === "everything-in-between"
+    ? blog_data
+    : blog_data.filter(
+        (article) => article.category === selectedCategory
+      );
 
   return (
     <>
@@ -22,7 +31,7 @@ export default function Home() {
 
         <Hero />
 
-
+      <Categories selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
         {/* WORTH READING */}
 
         <section className="worth-reading">
@@ -55,7 +64,7 @@ export default function Home() {
 
             <div className="article-grid">
 
-           {blog_data.map((article) => (
+           {filteredArticles.map((article) => (
   <ArticleCard
     article={article}
     key={article._id}
@@ -69,7 +78,7 @@ export default function Home() {
         </section>
 
 
-        <Categories />
+  
 
         <About />
 

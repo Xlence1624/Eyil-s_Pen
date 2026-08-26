@@ -1,8 +1,25 @@
-const categories = [
+import React from 'react'
+
+
+const Categories = ({ selectedCategory, setSelectedCategory }) => {
+
+
+
+
+    const categories = [
+  {
+    id: "everything-in-between",
+    icon: "◇",
+    name: ' "Everything in between" ',
+    description:
+      "Everything else that shapes how we see life.",
+  },
+
+
   {
     id: "faith",
     icon: "✦",
-    name: "Faith",
+    name: "faith",
     description:
       "Thoughts on God, purpose and everything eternal.",
   },
@@ -16,9 +33,9 @@ const categories = [
   },
 
   {
-    id: "lifestyle",
+    id: "life",
     icon: "○",
-    name: "Lifestyle",
+    name: "Life",
     description:
       "Living well, intentionally and with meaning.",
   },
@@ -37,20 +54,12 @@ const categories = [
     name: "Finance",
     description:
       "Wisdom for your money and your future.",
-  },
+  }
 
-  {
-    id: "perspectives",
-    icon: "◇",
-    name: ' "Everything in between" ',
-    description:
-      "Everything else that shapes how we see life.",
-  },
+
 ];
-
-export default function Categories() {
   return (
-    <section className="categories">
+     <section className="categories">
 
       <div className="container">
 
@@ -58,13 +67,14 @@ export default function Categories() {
           Explore eyilzpen
         </div>
 
-        <div className="category-grid">
+        <div className="category-grid"    >
 
           {categories.map((category) => (
-            <a
+            <div
               href={`#${category.id}`}
               className="category"
               key={category.id}
+              onClick={() => setSelectedCategory(category.id)}
             >
 
               <div className="category-icon">
@@ -79,7 +89,7 @@ export default function Categories() {
                 {category.description}
               </p>
 
-            </a>
+            </div>
           ))}
 
         </div>
@@ -87,5 +97,15 @@ export default function Categories() {
       </div>
 
     </section>
-  );
+  )
 }
+
+export default Categories
+
+
+
+
+
+
+
+
