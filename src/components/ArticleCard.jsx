@@ -25,7 +25,7 @@ export default function ArticleCard({ article }) {
 
         <div className="card-footer">
           <span>{article.readTime}</span>
-          <span className="arrow">→</span>
+          <span className="arrow">Read→</span>
         </div>
       </div>
     </article>
