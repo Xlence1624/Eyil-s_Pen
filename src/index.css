@@ -913,7 +913,9 @@ footer h3 {
   .hero-copy h1 {
     font-size: 52px;
   }
-
+footer{
+  margin-top: 0px;
+}
   .category-grid {
     grid-template-columns: 1fr 1fr;
   }
