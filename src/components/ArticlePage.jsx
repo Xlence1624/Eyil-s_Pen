@@ -67,7 +67,9 @@ const article = blog_data.find((item) => String(item._id) === String(id));
     <>
       {/* READING PROGRESS */}
 
-      <div className="reading-progress" style={{ width: `${progress}%` }} />
+      <div className="reading-progress" />
+
+       {/* style={{ width: `${progress}%` } */}
 
       <main>
         {/* =====================================
@@ -104,10 +106,10 @@ const article = blog_data.find((item) => String(item._id) === String(id));
             HERO IMAGE
         ===================================== */}
 
-        <figure className="article-cover">
+        <figure className="article-cover ">
           <img src={article.image} alt={article.title} />
 
-          <figcaption>A quiet moment worth paying attention to.</figcaption>
+          {/* <figcaption>{article.category}</figcaption> */}
         </figure>
 
         {/* =====================================
@@ -119,10 +121,10 @@ const article = blog_data.find((item) => String(item._id) === String(id));
 
           <aside className="article-sidebar">
             <div className="sidebar-inner">
-              <span className="sidebar-label">On this page</span>
+              <span className="sidebar-label"></span>
 
               <nav>
-                <a href="#beginning">The beginning</a>
+                <a href="#beginning">The intro</a>
 
                 <a href="#repetition">The quiet power of repetition</a>
 

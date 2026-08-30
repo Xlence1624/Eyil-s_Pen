@@ -1075,7 +1075,8 @@ footer{
 .article-cover {
   width: min(94%, 1380px);
 
-  margin: 0 auto;
+margin: 0 auto;
+  
 }
 
 .article-cover img {
@@ -1647,7 +1648,7 @@ footer{
 
   .article-cover img {
     height: 390px;
-
+padding: 0 5px;
     min-height: 0;
   }
 
