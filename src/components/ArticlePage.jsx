@@ -10,9 +10,12 @@ import { blog_data } from "../data/Articles.js";
 import { useNavigate } from "react-router-dom";
 
 export default function ArticlePage() {
-  const { slug } = useParams();
+const { id } = useParams();
+const article = blog_data.find((item) => String(item._id) === String(id));
+
+
   const navigate = useNavigate();
-  const article = blog_data[0];
+  
 
   const [progress, setProgress] = useState(0);
 

@@ -10,7 +10,7 @@ export default function ArticleCard({ article }) {
   return (
     <article
       className="article-card cursor-pointer"
-      onClick={() => navigate(`/blog/${article._id}`)}
+      onClick={() => navigate(`/a/${article._id}`)}
     >
       <div className="card-image">
          <img src={article.image} alt={article.title || "Article Image"} />
