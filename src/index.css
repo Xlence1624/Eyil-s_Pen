@@ -344,7 +344,7 @@ input {
 ========================================= */
 
 .worth-reading {
-  padding: 90px 0;
+  padding: 15px 0;
 }
 
 .section-top {
@@ -913,7 +913,9 @@ footer h3 {
   .hero-copy h1 {
     font-size: 52px;
   }
-
+footer{
+  margin-top: 0px;
+}
   .category-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -963,6 +965,7 @@ footer h3 {
 
 .article-category-row {
   display: flex;
+  
   justify-content: center;
   align-items: center;
 
@@ -1627,10 +1630,11 @@ footer h3 {
     padding: 75px 20px 55px;
   }
 
-  .article-hero h1 {
-    font-size: 57px;
 
-    letter-spacing: -1.5px;
+  .article-hero 
+  h1 {
+  font-size: 40px;
+  letter-spacing: -1.5px;
   }
 
   .article-deck {
@@ -1684,7 +1688,7 @@ footer h3 {
   }
 
   .article-author-card {
-    align-items: flex-start;
+    align-items: flex-center;
   }
 
   .related-heading {
