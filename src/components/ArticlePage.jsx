@@ -67,9 +67,9 @@ const article = blog_data.find((item) => String(item._id) === String(id));
     <>
       {/* READING PROGRESS */}
 
-      <div className="reading-progress" />
+      <div className="reading-progress" style={{ width: `${progress}%` }} />
 
-       {/* style={{ width: `${progress}%` } */}
+       
 
       <main>
         {/* =====================================
