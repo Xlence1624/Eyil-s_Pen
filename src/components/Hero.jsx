@@ -29,7 +29,7 @@ export default function Hero() {
 
             <a
              onClick={() => navigate(`/blog/${210}`)} 
-              className="btn btn-primary"
+              className="btn btn-primary cursor-pointer"
             >
               Read the essay <span>→</span>
             </a>

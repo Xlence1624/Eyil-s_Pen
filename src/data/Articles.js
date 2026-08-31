@@ -73,6 +73,22 @@ import office from '../assets/green-business-meeting-working-room-office-buildin
 
 
 export const blog_data = [
+
+
+  {
+        "_id": "210",
+        "title": "Respectfully, Read The Room.",
+        "description": "<p>Yo!!! The ‘Gen Z’ and woke generation versus cultural orientation and application has been everywhere since yesterday. And while I’m not exactly one to jump on trendy topics, in fact, I never intended to until now. Did you ask why?</p>o!!!<p>So a thought just hit me, about a minute ago, at 5.32am on 21st August, 2026, and it made me rush to my notepad…</p> <p>While I’ve had the conversation extensively with my girl and my man (don’t be distracted, stay focused), I just remembered I’ve been where the young lady is (I’m a young lady too, but, I believe you get the gist…)</p><p>When I first joined 9-5, I thought the elderly and those at the peak of their career truly didn’t want to feel old, especially since there are a lot of younger ones in the workplace, while the elderly ones were more of the managers. So, maybe they wanted to feel included and the first-name basis was their means of achieving that, you get? And why would I want my ‘ogas’ (that means bosses) to feel that way? (Old and uncomfortable, that is.) So, yes, maybe I jumped on the ‘first name train’ too.</p><p>Of course, some gave us their nicknames to work with, yeah (similar to Mr. Elumelu’s preference for TOE over his first name), and that made it easier for us from the ‘respect your adults’ background (even the nickname sef dey be one kind sometimes, just accept the ‘Sir’ or ‘Ma’).</p><p>…back to my goof.</p><p>There was a senior colleague that I liked, pretty-faced, classy, and all, so I chose to call her ‘babe’ (multiple lol). Putting it in context, senior colleagues are usually people on the same role as you, not necessarily your team lead, but of course, you met them on the job.</p><p>I was called out immediately; she said she’s a mother and I’m calling her babe. Over 3 years in and she’s now my person person, a very sweet, lovely and lovable human. But did I learn that? I clocked it in no time abeg.</p><p>Trust me when I say, I’m one to address supervisors and managers with all respect and all. I can’t even call our drivers by their names without a ‘Mr.’, much more…</p><p>…even though some would give you a query for using ‘Sir’ and ‘Ma’ for them. Later, I even realized ‘Ma’ has an aging undertone or something, so ‘Ma’am’ is preferred. LOL. Ever since, I’ve been ‘Ma’am-ing’ every adult female, I want peace.</p><p>Is the corporate world in Africa, especially Nigeria, a joke to you?</p><p>I used to beat myself up when I sent absent-minded emails, using a first name instead of the ‘Sir’ and ‘Ma’, but then some drag you and you just use the first name for some and not for some, even though you wouldn’t address any of them by their first name in person.</p><p>All of this is to say, there is no ‘one size fits all’. I think it’s more of ‘read the room’ and know what applies per time, and in what space.</p><p>However, in the words of a few comments I’ve seen, the respect thing never misses; let them be the ones to ask you to drop it.</p><p>Recently came across a video that said most people of colour have a colonization history that once demeaned their humanity. And in more recent times, many have had to struggle to achieve, to be, whatever it is they currently are. Hence, we mostly have a lot to prove; the accumulation of materials, the demand for respect and all, so…</p><p>So, let our elders and people at the peak of their careers have all the respect they want and, in many cases, have earned!!!</p><p>Did you get that?</p><p>Please tell me you did 🌚 </p><p>Also, tell me you caught the pun in the title? 🌚</p><p>Okay, bye!!!</p>",
+        "category": "work",
+        "image": office,
+        "isPublished": true,
+        "createdAt": "2025-04-29T10:14:58.575Z",
+        "updatedAt": "2025-04-29T10:14:58.575Z",
+        "__v": 0,
+        "subTitle": "",
+         "readTime": "10 Minutes"
+    },
+
     {
         "_id": "6805ee7dd8f584af5da78d37",
         "title": "HONESTY? EMPLOYABILITY?",
@@ -203,19 +219,7 @@ export const blog_data = [
          "readTime": "10 Minutes"
     },
     
-    {
-        "_id": "210",
-        "title": "Respectfully, Read The Room.",
-        "description": "<p>Yo!!! The ‘Gen Z’ and woke generation versus cultural orientation and application has been everywhere since yesterday. And while I’m not exactly one to jump on trendy topics, in fact, I never intended to until now. Did you ask why?</p>o!!!<p>So a thought just hit me, about a minute ago, at 5.32am on 21st August, 2026, and it made me rush to my notepad…</p> <p>While I’ve had the conversation extensively with my girl and my man (don’t be distracted, stay focused), I just remembered I’ve been where the young lady is (I’m a young lady too, but, I believe you get the gist…)</p><p>When I first joined 9-5, I thought the elderly and those at the peak of their career truly didn’t want to feel old, especially since there are a lot of younger ones in the workplace, while the elderly ones were more of the managers. So, maybe they wanted to feel included and the first-name basis was their means of achieving that, you get? And why would I want my ‘ogas’ (that means bosses) to feel that way? (Old and uncomfortable, that is.) So, yes, maybe I jumped on the ‘first name train’ too.</p><p>Of course, some gave us their nicknames to work with, yeah (similar to Mr. Elumelu’s preference for TOE over his first name), and that made it easier for us from the ‘respect your adults’ background (even the nickname sef dey be one kind sometimes, just accept the ‘Sir’ or ‘Ma’).</p><p>…back to my goof.</p><p>There was a senior colleague that I liked, pretty-faced, classy, and all, so I chose to call her ‘babe’ (multiple lol). Putting it in context, senior colleagues are usually people on the same role as you, not necessarily your team lead, but of course, you met them on the job.</p><p>I was called out immediately; she said she’s a mother and I’m calling her babe. Over 3 years in and she’s now my person person, a very sweet, lovely and lovable human. But did I learn that? I clocked it in no time abeg.</p><p>Trust me when I say, I’m one to address supervisors and managers with all respect and all. I can’t even call our drivers by their names without a ‘Mr.’, much more…</p><p>…even though some would give you a query for using ‘Sir’ and ‘Ma’ for them. Later, I even realized ‘Ma’ has an aging undertone or something, so ‘Ma’am’ is preferred. LOL. Ever since, I’ve been ‘Ma’am-ing’ every adult female, I want peace.</p><p>Is the corporate world in Africa, especially Nigeria, a joke to you?</p><p>I used to beat myself up when I sent absent-minded emails, using a first name instead of the ‘Sir’ and ‘Ma’, but then some drag you and you just use the first name for some and not for some, even though you wouldn’t address any of them by their first name in person.</p><p>All of this is to say, there is no ‘one size fits all’. I think it’s more of ‘read the room’ and know what applies per time, and in what space.</p><p>However, in the words of a few comments I’ve seen, the respect thing never misses; let them be the ones to ask you to drop it.</p><p>Recently came across a video that said most people of colour have a colonization history that once demeaned their humanity. And in more recent times, many have had to struggle to achieve, to be, whatever it is they currently are. Hence, we mostly have a lot to prove; the accumulation of materials, the demand for respect and all, so…</p><p>So, let our elders and people at the peak of their careers have all the respect they want and, in many cases, have earned!!!</p><p>Did you get that?</p><p>Please tell me you did 🌚 </p><p>Also, tell me you caught the pun in the title? 🌚</p><p>Okay, bye!!!</p>",
-        "category": "work",
-        "image": office,
-        "isPublished": true,
-        "createdAt": "2025-04-29T10:14:58.575Z",
-        "updatedAt": "2025-04-29T10:14:58.575Z",
-        "__v": 0,
-        "subTitle": "",
-         "readTime": "10 Minutes"
-    },
+  
     
 ]
 
