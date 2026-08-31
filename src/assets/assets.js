@@ -34,8 +34,11 @@ import dashboard_icon_4 from './dashboard_icon_4.svg'
 import eyilslogo from './eyils_logo.jpg'
 import pen_icon from './whitepen.png'
 import Iyanu from './Iyanu.jpg'
-
+import office from './green-business-meeting-working-room-office-building-with-bookshelf.jpg'
+import office2 from './view-modern-office.jpg'
 export const assets = {
+    office2,
+    office,
     Iyanu,
     pen_icon,
     eyilslogo,

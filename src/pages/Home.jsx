@@ -17,15 +17,17 @@ export default function Home() {
 const [selectedCategory, setSelectedCategory] = useState("everything-in-between");
   const filteredArticles =
   selectedCategory === "everything-in-between"
-    ? blog_data
+    ? blog_data.slice(0,6)
     : blog_data.filter(
         (article) => article.category === selectedCategory
-      );
+      ).slice(0,6);
 
   return (
     <>
 
-      <Header />
+      <Header selectedCategory={selectedCategory}
+
+setSelectedCategory={setSelectedCategory}/>
 
       <main>
 
@@ -53,7 +55,7 @@ const [selectedCategory, setSelectedCategory] = useState("everything-in-between"
               </div>
 
               <p
-     onClick={() => navigate("/all_article")}
+     onClick={() => navigate("/everything")}
                 className="btn btn-outline cursor-pointer"
               >
                 View Everything

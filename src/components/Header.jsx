@@ -1,16 +1,74 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const navigation = [
-  "Faith",
-  "Relationships",
-  "Lifestyle",
-  "Work",
-  "Finance",
-  '"Everything in between"',
+// const navigation = [
+//   "Faith",
+//   "Relationships",
+//   "Lifestyle",
+//   "Work",
+//   "Finance",
+//   '"Everything in between"',
+// ];
+
+
+   const navigation = [
+  {
+    id: "everything-in-between",
+    icon: "◇",
+    name: ' "Everything in between" ',
+    description:
+      "Everything else that shapes how we see life.",
+  },
+
+
+  {
+    id: "faith",
+    icon: "✦",
+    name: "faith",
+    description:
+      "Thoughts on God, purpose and everything eternal.",
+  },
+
+  {
+    id: "relationships",
+    icon: "♡",
+    name: "Relationships",
+    description:
+      "Love, marriage, friendship and the people in between.",
+  },
+
+  {
+    id: "life",
+    icon: "○",
+    name: "Life",
+    description:
+      "Living well, intentionally and with meaning.",
+  },
+
+  {
+    id: "work",
+    icon: "□",
+    name: "Work",
+    description:
+      "Purpose, career, productivity and making impact.",
+  },
+
+  {
+    id: "finance",
+    icon: "↗",
+    name: "Finance",
+    description:
+      "Wisdom for your money and your future.",
+  }
+
+
 ];
 
-export default function Header() {
+export default function Header({ selectedCategory, setSelectedCategory }) {
   const [menuOpen, setMenuOpen] = useState(false);
+
+
+const navigate = useNavigate()
 
   return (
     <header className="site-header">
@@ -23,11 +81,11 @@ export default function Header() {
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           {navigation.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              onClick={() => setMenuOpen(false)}
+              key={item.id}
+             className="cursor-pointer"
+   onClick={() => setSelectedCategory(item.id)}
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </nav>

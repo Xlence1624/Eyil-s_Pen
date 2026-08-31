@@ -19,6 +19,35 @@ const article = blog_data.find((item) => String(item._id) === String(id));
 
   const [progress, setProgress] = useState(0);
 
+  const [comments, setComments] = useState([
+  {
+    id: 1,
+    author: "Michael",
+    text: "Great article!",
+  },
+]);
+
+const [newComment, setNewComment] = useState("");
+
+
+
+const handleAddComment = () => {
+  if (!newComment.trim()) return;
+
+  const comment = {
+    id: Date.now(),
+    author: "Guest User",
+    text: newComment,
+  };
+
+  setComments((prevComments) => [
+    ...prevComments,
+    comment,
+  ]);
+
+  setNewComment("");
+};
+
   useEffect(() => {
     window.scrollTo(0, 0);
 
@@ -176,6 +205,28 @@ const article = blog_data.find((item) => String(item._id) === String(id));
             </div>
           </article>
         </section>
+
+{/* 
+        <textarea
+  value={newComment}
+  onChange={(e) => setNewComment(e.target.value)}
+  placeholder="Write a comment..."
+/>
+
+<button onClick={handleAddComment}>
+  Post Comment
+</button>
+
+
+
+<div className="comments">
+  {comments.map((comment) => (
+    <div key={comment.id}>
+      <h4>{comment.author}</h4>
+      <p>{comment.text}</p>
+    </div>
+  ))}
+</div> */}
 
         {/* =====================================
             RELATED STORIES
