@@ -2,6 +2,15 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 const AdminLogin = () => {
   const navigate = useNavigate()
+
+    const handleLogin = (e) => {
+    e.preventDefault(); // 👈 This stops the native browser reload/crash!
+
+    // Place any actual validation or backend API login checks here later
+
+    navigate('/admindashboard');
+  }
+
   return (
 <div class="flex h-[700px] w-full">
     <div class="w-full hidden md:inline-block">
@@ -10,7 +19,7 @@ const AdminLogin = () => {
 
     <div class="w-full flex flex-col items-center justify-center">
 
-        <form class="md:w-96 w-80 flex flex-col items-center justify-center">
+        <form onSubmit={handleLogin}class="md:w-96 w-80 flex flex-col items-center justify-center">
             <h2 class="text-4xl text-gray-900 font-medium">Sign in</h2>
             <p class="text-sm text-gray-500/90 mt-3">Welcome back! Please sign in to continue</p>
 
@@ -46,7 +55,7 @@ const AdminLogin = () => {
                 <a class="text-sm underline" href="#">Forgot password?</a>
             </div>
 
-            <button type="submit" class="mt-8 w-full h-11 rounded-full text-white bg-indigo-500 hover:opacity-90 transition-opacity" onClick={() => navigate('/admindashboard')}>
+            <button type="submit" class="mt-8 w-full h-11 rounded-full text-white bg-indigo-500 hover:opacity-90 transition-opacity">
                 Login
             </button>
         
