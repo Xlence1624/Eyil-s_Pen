@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import Header from "../components/Header";
-import Newsletter from "../components/Newsletter.jsx";
+import Newsletter from "../components/NewsLetter.jsx";
 
 import Footer from "../components/Footer";
 

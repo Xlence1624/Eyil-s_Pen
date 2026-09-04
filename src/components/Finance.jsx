@@ -3,7 +3,7 @@ import Header from './Header.jsx'
 import { blog_data } from '../data/Articles.js'
 import ArticleCard from './ArticleCard.jsx'
 import Categories from './Categories.jsx'
-// import Newsletter from './NewsLetter.jsx'
+import Newsletter from './NewsLetter.jsx'
 import Footer from './Footer.jsx'
 import Scroll from './Scroll.jsx'
 import { useNavigate } from 'react-router-dom'
@@ -76,7 +76,7 @@ const Finance = () => {
         <Categories />
 
           
-              
+             <Newsletter/>   
 
                  <section className="image-strip ">
 
