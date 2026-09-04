@@ -55,7 +55,7 @@ const AdminLogin = () => {
                 <a class="text-sm underline" href="#">Forgot password?</a>
             </div>
 
-            <button type="submit" class="mt-8 w-full h-11 rounded-full text-white bg-indigo-500 hover:opacity-90 transition-opacity">
+            <button type="submit" class="mt-8 w-full h-11 rounded-full text-white bg-[#183c32] hover:opacity-90 transition-opacity">
                 Login
             </button>
         

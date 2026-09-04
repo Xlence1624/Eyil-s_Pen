@@ -28,6 +28,7 @@ import { useNavigate } from "react-router-dom";
     name: "faith",
     description:
       "Thoughts on God, purpose and everything eternal.",
+       to: "/faith"
   },
 
   {
@@ -36,6 +37,7 @@ import { useNavigate } from "react-router-dom";
     name: "Relationships",
     description:
       "Love, marriage, friendship and the people in between.",
+      to: "/relationships"
   },
 
   {
@@ -44,6 +46,7 @@ import { useNavigate } from "react-router-dom";
     name: "Life",
     description:
       "Living well, intentionally and with meaning.",
+      to: "/life"
   },
 
   {
@@ -52,6 +55,7 @@ import { useNavigate } from "react-router-dom";
     name: "Work",
     description:
       "Purpose, career, productivity and making impact.",
+      to: "/work"
   },
 
   {
@@ -60,6 +64,7 @@ import { useNavigate } from "react-router-dom";
     name: "Finance",
     description:
       "Wisdom for your money and your future.",
+      to: "/finance"
   }
 
 
@@ -87,6 +92,7 @@ const navigate = useNavigate()
    onClick={() => navigate(item.to)}
             >
               {item.name}
+              
             </a>
           ))}
         </nav>

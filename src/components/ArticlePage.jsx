@@ -265,7 +265,7 @@ const handleAddComment = () => {
                 href="/articles/your-salary-is-not-your-wealth"
                 className="related-card"
               >
-                <span className="eyebrow">Money</span>
+                <span className="eyebrow">Finance</span>
 
                 <h3>Your Salary Is Not Your Wealth</h3>
 

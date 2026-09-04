@@ -36,7 +36,15 @@ import pen_icon from './whitepen.png'
 import Iyanu from './Iyanu.jpg'
 import office from './green-business-meeting-working-room-office-building-with-bookshelf.jpg'
 import office2 from './view-modern-office.jpg'
+import finance from './finance.jpg'
+import faith from './faith.jpg'
+import faith2 from './faith2.jpg'
+import relationship from './relationship.jpg'
 export const assets = {
+    faith2,
+    faith,
+    relationship,
+    finance,
     office2,
     office,
     Iyanu,
@@ -65,6 +73,17 @@ export const assets = {
     dashboard_icon_2,
     dashboard_icon_3,
     dashboard_icon_4,
+    blog_pic_1,
+    blog_pic_2,
+    blog_pic_3,
+    blog_pic_4,
+    blog_pic_5,
+    blog_pic_6,
+    blog_pic_7,
+
+    blog_pic_8,
+    blog_pic_9,
+    blog_pic_10,
 }
 export const blogCategories = ["Everything in between", 'Work', 'Life', 'Faith', 'Finance', "Relationships" ]
 

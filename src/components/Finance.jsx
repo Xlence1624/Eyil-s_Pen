@@ -1,27 +1,21 @@
 import React from 'react'
-import NavBar from "../components/NavBar"
-import Header from '../components/Header'
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-import { blog_data } from '../data/Articles';
-import ArticleCard from '../components/ArticleCard';
-import Categories from '../components/Categories';
-import About from '../components/About';
-import Newsletter from '../components/NewsLetter';
-import Scroll from '../components/Scroll';
-import Footer from '../components/Footer';
-const Everything = () => {
+import Header from './Header.jsx'
+import { blog_data } from '../data/Articles.js'
+import ArticleCard from './ArticleCard.jsx'
+import Categories from './Categories.jsx'
+import Newsletter from './Newsletter.jsx'
+import Footer from './Footer.jsx'
+import Scroll from './Scroll.jsx'
+import { useNavigate } from 'react-router-dom'
+import {assets} from "../assets/assets"
 
-
-
-      const navigate = useNavigate();
-
-
-  const filteredArticles =
-  blog_data.filter((article) => article.category === "life" || article.category === "work" || article.category === "finance" || article.category === "relationships" || article.category === "faith"  
-      );
+const Finance = () => {
+      const filteredArticles =
+      blog_data.filter((article) => article.category === "finance"  
+          );
+          const navigate = useNavigate();
   return (
-    <div className='flex flex-col justify-between gap-9 '>
+   <div className='flex flex-col justify-between gap-9 '>
         <Scroll/>
      <Header />
 
@@ -39,7 +33,7 @@ const Everything = () => {
             </span> */}
 
             <h1>
-Welcome to my mind, one post at a time.         </h1>
+Finance Related Thoughts.         </h1>
 
             <div className="gold-line" />
 
@@ -57,11 +51,10 @@ Welcome to my mind, one post at a time.         </h1>
           </div>
 
           <div className="hero-image">
-            <img
-
+            <img src={assets.finance}
             // src={assets.office2}
-              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85"
-              alt="Coffee beside a quiet window"
+            //   src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85"
+            //   alt="Coffee beside a quiet window"
             />
           </div>
 
@@ -122,4 +115,4 @@ Welcome to my mind, one post at a time.         </h1>
   )
 }
 
-export default Everything
+export default Finance 

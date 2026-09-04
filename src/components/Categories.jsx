@@ -24,6 +24,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
     name: "faith",
     description:
       "Thoughts on God, purpose and everything eternal.",
+        to: "/faith"
   },
 
   {
@@ -32,6 +33,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
     name: "Relationships",
     description:
       "Love, marriage, friendship and the people in between.",
+      to: "/relationships"
   },
 
   {
@@ -40,6 +42,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
     name: "Life",
     description:
       "Living well, intentionally and with meaning.",
+      to: "/life"
   },
 
   {
@@ -48,6 +51,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
     name: "Work",
     description:
       "Purpose, career, productivity and making impact.",
+      to: "/work"
   },
 
   {
@@ -56,6 +60,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
     name: "Finance",
     description:
       "Wisdom for your money and your future.",
+      to: "/finance"
   }
 
 
