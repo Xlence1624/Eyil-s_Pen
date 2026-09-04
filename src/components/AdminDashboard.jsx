@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import AdminHeader from './AdminHeader';
+import AdminHeader from './AdminHeader.jsx';
 
 import Post from  "./Post.jsx"
 import PostOverview from "./PostOverview.jsx"
