@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 
 // const NewsLetter = () => {
 //   return (
@@ -16,7 +16,7 @@
 // export default NewsLetter
 import { useState } from "react";
 
-export default function Newsletter() {
+ function Newsletter() {
 
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -80,3 +80,5 @@ export default function Newsletter() {
     </section>
   );
 }
+
+export default Newsletter;
