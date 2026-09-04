@@ -28,12 +28,9 @@ const Finance = () => {
 
           <div className="hero-copy">
 
-            {/* <span className="eyebrow">
-              A thought on work ethics
-            </span> */}
+        
 
-            <h1>
-Finance Related Thoughts.         </h1>
+            <h1>Finance Related Thoughts.</h1>
 
             <div className="gold-line" />
 
@@ -52,9 +49,8 @@ Finance Related Thoughts.         </h1>
 
           <div className="hero-image">
             <img src={assets.finance}
-            // src={assets.office2}
-            //   src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85"
-            //   alt="Coffee beside a quiet window"
+        
+          
             />
           </div>
 
