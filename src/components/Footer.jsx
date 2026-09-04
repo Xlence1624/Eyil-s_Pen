@@ -1,9 +1,10 @@
 import React, { useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
   // Performance optimization: Calculate the year only once on mount
   const currentYear = useMemo(() => new Date().getFullYear(), []);
-
+const navigate = useNavigate();
   return (
     <footer>
       <div className="container">
@@ -51,7 +52,7 @@ export default function Footer() {
 
         <div className="copyright flex justify-between items-center">
           © {currentYear} Eyilzpen. All rights reserved.
-          <p onClick={() => (window.location.href = '/admin')}>Admin login</p>
+          <p onClick={() => navigate('/admin')}>Admin login</p>
         </div>
       </div>
     </footer>
