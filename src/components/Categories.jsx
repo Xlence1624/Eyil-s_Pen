@@ -1,8 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const Categories = ({ selectedCategory, setSelectedCategory }) => {
-
+  const navigate = useNavigate();
 
 
 
@@ -13,6 +14,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
     name: ' "Everything in between" ',
     description:
       "Everything else that shapes how we see life.",
+      to: "/everything"
   },
 
 
@@ -71,10 +73,10 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => {
 
           {categories.map((category) => (
             <div
-              href={`#${category.id}`}
-              className="category"
+             
+              className="category cursor-pointer"
               key={category.id}
-              onClick={() => setSelectedCategory(category.id)}
+              onClick={() => navigate(category.to)}
             >
 
               <div className="category-icon">

@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 
 import { blog_data } from "../data/Articles.js";
 import { useNavigate } from "react-router-dom";
+import Comments from "./Comments.jsx";
 
 export default function ArticlePage() {
 const { id } = useParams();
@@ -206,6 +207,8 @@ const handleAddComment = () => {
           </article>
         </section>
 
+        <Comments/>
+
 {/* 
         <textarea
   value={newComment}
@@ -241,7 +244,7 @@ const handleAddComment = () => {
                 <h2>You might also like</h2>
               </div>
 
-              <p onClick={() => navigate("/")} className="btn btn-outline">
+              <p onClick={() => navigate("/everything")} className="btn btn-outline">
                 All essays
               </p>
             </div>

@@ -44,7 +44,7 @@ setSelectedCategory={setSelectedCategory}/>
             </span> */}
 
             <h1>
-welcome to my mind, one post at a time.         </h1>
+Welcome to my mind, one post at a time.         </h1>
 
             <div className="gold-line" />
 

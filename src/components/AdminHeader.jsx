@@ -79,36 +79,14 @@ const navigate = useNavigate()
           Eyilzpen
         </a>
 
-        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-          {navigation.map((item) => (
-            <a
-              key={item.id}
-             className="cursor-pointer"
-   onClick={() => navigate(item.to)}
-            >
-              {item.name}
-            </a>
-          ))}
-        </nav>
+  <p className="bg-[#183c32] text-white py-2 px-4 rounded-full">Logout</p>
 
-        <div className="nav-actions">
 
-          <button
-            className="icon-button"
-            aria-label="Search"
-          >
-            ⌕
-          </button>
+      
 
-          <button
-            className="icon-button menu-button"
-            aria-label="Open menu"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? "×" : "☰"}
-          </button>
+        
 
-        </div>
+        
 
       </div>
     </header>

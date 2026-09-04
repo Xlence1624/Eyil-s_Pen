@@ -49,8 +49,9 @@ export default function Footer() {
 
         </div>
 
-        <div className="copyright">
+        <div className="copyright flex justify-between items-center">
           © {currentYear} Eyilzpen. All rights reserved.
+          <p onClick={() => (window.location.href = '/admin')}>Admin login</p>
         </div>
       </div>
     </footer>
