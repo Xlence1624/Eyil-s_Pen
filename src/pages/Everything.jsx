@@ -7,7 +7,7 @@ import { blog_data } from '../data/Articles';
 import ArticleCard from '../components/ArticleCard';
 import Categories from '../components/Categories';
 import About from '../components/About';
-import Newsletter from '../components/NewsLetter';
+import Newsletter from '../components/Newsletter';
 import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
 const Everything = () => {
