@@ -99,12 +99,12 @@ const navigate = useNavigate()
 
         <div className="nav-actions">
 
-          <button
+          {/* <button
             className="icon-button"
             aria-label="Search"
           >
             ⌕
-          </button>
+          </button> */}
 
           <button
             className="icon-button menu-button"
