@@ -52,7 +52,9 @@ const navigate = useNavigate();
 
         <div className="copyright flex justify-between items-center">
           © {currentYear} Eyilzpen. All rights reserved.
-          <p onClick={() => navigate('/admin')}>Admin login</p>
+          <p onClick={() => navigate('/admin')} className="cursor-pointer">
+            Admin login
+          </p>
         </div>
       </div>
     </footer>
