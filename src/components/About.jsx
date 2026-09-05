@@ -12,7 +12,7 @@ export default function About() {
           <div className="about-copy">
 
             <span className="eyebrow">
-              A Little About the Writer
+               About the Writer
             </span>
 
             <h2>
