@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://your-actual-backend-url.com*"
+      "destination": "https://eyil-s-pen.vercel.app/api/:path*"
     }
   ]
 }
