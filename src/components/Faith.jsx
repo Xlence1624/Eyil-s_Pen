@@ -32,8 +32,7 @@ const Faith = () => {
               A thought on work ethics
             </span> */}
 
-            <h1>
-Faith Related Thoughts.         </h1>
+            <h1>Thoughts on God, purpose and everything eternal.        </h1>
 
             <div className="gold-line" />
 

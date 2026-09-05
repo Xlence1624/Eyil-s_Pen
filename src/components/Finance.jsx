@@ -30,7 +30,7 @@ const Finance = () => {
 
         
 
-            <h1>Finance Related Thoughts.</h1>
+            <h1>Wisdom for your money and your future.</h1>
 
             <div className="gold-line" />
 

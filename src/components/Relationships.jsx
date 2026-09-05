@@ -32,8 +32,7 @@ const Relationships = () => {
               A thought on work ethics
             </span> */}
 
-            <h1>
-Relationship Related Thoughts.         </h1>
+            <h1>Love, marriage, friendship and the people in between.         </h1>
 
             <div className="gold-line" />
 

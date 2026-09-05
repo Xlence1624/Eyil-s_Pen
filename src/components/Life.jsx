@@ -33,7 +33,7 @@ const Life = () => {
             </span> */}
 
             <h1>
-My Reflections on Life         </h1>
+Living well, intentionally and with meaning.      </h1>
 
             <div className="gold-line" />
 

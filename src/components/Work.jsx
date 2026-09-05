@@ -34,7 +34,7 @@ const Work = () => {
             </span> */}
 
             <h1>
-Work Related Thoughts.         </h1>
+Purpose, career, productivity and making impact.       </h1>
 
             <div className="gold-line" />
 
