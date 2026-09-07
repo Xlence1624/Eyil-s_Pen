@@ -14,19 +14,19 @@ import { useParams } from "react-router-dom";
 export default function FromDbPage() {
 
 
+const { id } = useParams();
   
  useEffect(() => {
     // Make the Axios GET request
     axios.get('https://herblogg.vercel.app/api/post')
       .then(response => {
-        setPost(response.data.post); // Axios wraps data in response.data
+        setPost(response.data); // Axios wraps data in response.data
       })
       .catch(error => {
         console.error("Error fetching data with axios", error);
       });
-  }, []);
+  }, [id]);
 
-const { id } = useParams();
 const article = post.find((item) => String(item._id) === String(id));
 
 
