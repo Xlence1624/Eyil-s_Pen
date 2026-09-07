@@ -65,7 +65,7 @@ Living well, intentionally and with meaning.      </h1>
     </section>
 
 
-          <div className="article-grid ">
+          <div className="article-grid p-3">
      
                 {filteredArticles.map((article) => (
        <ArticleCard

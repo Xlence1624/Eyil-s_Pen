@@ -87,7 +87,7 @@ Welcome to my mind, one post at a time.         </h1>
     </section>
 
 
-          <div className="article-grid p-6 ">
+          <div className="article-grid p-3 ">
 
 
 

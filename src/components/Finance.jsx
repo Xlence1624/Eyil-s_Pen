@@ -61,7 +61,7 @@ const Finance = () => {
     </section>
 
 
-          <div className="article-grid ">
+          <div className="article-grid p-3">
      
                 {filteredArticles.map((article) => (
        <ArticleCard
