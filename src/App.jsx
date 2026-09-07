@@ -20,6 +20,7 @@ const App = () => {
       
       <Route path='/' element={<Home />} />
       <Route path='/blog/:id' element={<FullArticle />} />
+        <Route path='/post/:id' element={<FullArticle />} />
           <Route path='/admindashboard' element={<AdminDashboard />} />
           <Route path='/everything' element={<Everything />} />
             <Route path='/admin' element={<AdminLogin />} />
@@ -28,6 +29,7 @@ const App = () => {
           <Route path='/finance' element={<Finance />} />
             <Route path='/relationships' element={<Relationships />} />
               <Route path='/faith' element={<Faith />} />
+
     </Routes>
     </div>
   )

@@ -10,7 +10,10 @@ import { blog_data } from "../data/Articles.js";
 import { useNavigate } from "react-router-dom";
 import Comments from "./Comments.jsx";
 
-export default function ArticlePage() {
+
+export default function FromDbPage() {
+
+
 const { id } = useParams();
 const article = blog_data.find((item) => String(item._id) === String(id));
 
@@ -109,24 +112,24 @@ const handleAddComment = () => {
         <header className="article-hero">
           <div className="article-hero-inner">
             <div className="article-category-row">
-              <span className="eyebrow">{article.category}</span>
+              <span className="eyebrow">{article.category || post.category}</span>
 
               <span className="article-separator">/</span>
 
-              <span>{article.readTime}</span>
+              <span>{article.readTime || post.readTime}</span>
             </div>
 
-            <h1>{article.title}</h1>
+            <h1>{article.title || post.title}</h1>
 
-            <p className="article-deck">{article.excerpt}</p>
+            <p className="article-deck">{article.excerpt || post.excerpt}</p>
 
             <div className="article-author-row">
               <div className="author-avatar">E</div>
 
               <div>
-                <div className="author-name">{article.author}</div>
+                <div className="author-name">{article.author || post.author}</div>
 
-                <div className="author-meta">{article.date}</div>
+                <div className="author-meta">{article.date || post.date}</div>
               </div>
             </div>
           </div>
@@ -137,7 +140,7 @@ const handleAddComment = () => {
         ===================================== */}
 
         <figure className="article-cover ">
-          <img src={article.image} alt={article.title} />
+          <img src={article.image || post.image} alt={article.title || post.title} />
 
           {/* <figcaption>{article.category}</figcaption> */}
         </figure>
@@ -185,7 +188,7 @@ const handleAddComment = () => {
 
           <article className="article-content">
             <div id="beginning" className="text-blue-100">
-              <p dangerouslySetInnerHTML={{ __html: article.description }}></p>
+             <p dangerouslySetInnerHTML={{ __html: article.description}}></p>
             </div>
 
             {/* AUTHOR */}

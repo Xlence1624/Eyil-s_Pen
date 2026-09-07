@@ -1,7 +1,10 @@
 import React from 'react'
 import NavBar from "../components/NavBar"
 import Header from '../components/Header'
-import { useState } from "react";
+
+import  { useState, useEffect } from 'react';
+import axios from '../api/axios';
+
 import { useNavigate } from 'react-router-dom';
 import { blog_data } from '../data/Articles';
 import ArticleCard from '../components/ArticleCard';
@@ -10,12 +13,24 @@ import About from '../components/About';
 import Newsletter from '../components/NewsLetter.jsx';
 import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
+import Fromdb from '../components/Fromdb';
 const Everything = () => {
-
+  const [posts, setPost] = useState([]);
 
 
       const navigate = useNavigate();
 
+
+  useEffect(() => {
+    // Make the Axios GET request
+    axios.get('https://herblogg.vercel.app/api/posts')
+      .then(response => {
+        setPost(response.data.posts); // Axios wraps data in response.data
+      })
+      .catch(error => {
+        console.error("Error fetching data with axios", error);
+      });
+  }, []);
 
   const filteredArticles =
   blog_data.filter((article) => article.category === "life" || article.category === "work" || article.category === "finance" || article.category === "relationships" || article.category === "faith"  
@@ -73,6 +88,22 @@ Welcome to my mind, one post at a time.         </h1>
 
 
           <div className="article-grid ">
+
+
+
+
+
+                    {posts.map((post) => (
+       <Fromdb
+         post={post}
+         key={post._id}
+         title={post.title}
+         content={post.content}
+         image={post.image}
+     
+       />
+     
+     ))}
      
                 {filteredArticles.map((article) => (
        <ArticleCard
@@ -80,6 +111,8 @@ Welcome to my mind, one post at a time.         </h1>
          key={article._id}
        />
      ))}
+
+        
      
                  </div>
 
