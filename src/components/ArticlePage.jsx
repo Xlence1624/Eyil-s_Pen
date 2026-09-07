@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 import Comments from "./Comments.jsx";
 
 
-export default function FromDbPage() {
+export default function ArticlePage() {
 
 
 const { id } = useParams();
@@ -112,24 +112,24 @@ const handleAddComment = () => {
         <header className="article-hero">
           <div className="article-hero-inner">
             <div className="article-category-row">
-              <span className="eyebrow">{article.category || post.category}</span>
+              <span className="eyebrow">{article.category }</span>
 
               <span className="article-separator">/</span>
 
-              <span>{article.readTime || post.readTime}</span>
+              <span>{article.readTime}</span>
             </div>
 
-            <h1>{article.title || post.title}</h1>
+            <h1>{article.title }</h1>
 
-            <p className="article-deck">{article.excerpt || post.excerpt}</p>
+            <p className="article-deck">{article.excerpt}</p>
 
             <div className="article-author-row">
               <div className="author-avatar">E</div>
 
               <div>
-                <div className="author-name">{article.author || post.author}</div>
+                <div className="author-name">{article.author }</div>
 
-                <div className="author-meta">{article.date || post.date}</div>
+                <div className="author-meta">{article.date }</div>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ const handleAddComment = () => {
         ===================================== */}
 
         <figure className="article-cover ">
-          <img src={article.image || post.image} alt={article.title || post.title} />
+          <img src={article.image } alt={article.title} />
 
           {/* <figcaption>{article.category}</figcaption> */}
         </figure>

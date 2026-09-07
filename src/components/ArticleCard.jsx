@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import { useParams } from "react-router-dom";
 export default function ArticleCard({ article }) {
   const navigate = useNavigate();
+  const { id } = useParams();
   const {title, description, image, author, date, _id, category, readTime} = article
   // If the article prop hasn't loaded yet, prevent a crash
   if (!article) return null;
