@@ -40,7 +40,11 @@ const [activePage, setActivePage] = useState('dashboard');
 
             <div className="flex">
 
- <aside className="md:w-64 w-16 border-r h-[550px] text-base border-gray-300 pt-4 flex flex-col transition-all duration-300">
+ <aside
+ 
+ className="md:w-64 w-16 border-r h-[550px] text-base border-gray-300 pt-4 flex flex-col transition-all duration-300"
+ 
+ >
                 {sidebarLinks.map((item, index) => (
                     <button
                         className={`flex items-center py-3 px-4 gap-3 

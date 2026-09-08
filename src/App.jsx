@@ -12,6 +12,7 @@ import Work from './components/Work.jsx'
 import Finance from './components/Finance.jsx'
 import Relationships from './components/Relationships.jsx'
 import Faith from './components/Faith.jsx'
+import FromDbPage from './components/FromDdPage.jsx'
 const App = () => {
   return (
     <div >
@@ -20,14 +21,16 @@ const App = () => {
       
       <Route path='/' element={<Home />} />
       <Route path='/blog/:id' element={<FullArticle />} />
-        <Route path='/post/:id' element={<FullArticle />} />
+        {/* <Route path='/post/:id' element={<FullArticle />} /> */}
           <Route path='/admindashboard' element={<AdminDashboard />} />
           <Route path='/everything' element={<Everything />} />
             <Route path='/admin' element={<AdminLogin />} />
         <Route path='/life' element={<Life />} />
+        <Route path="/post/:id" element={<FromDbPage />} />
           <Route path='/work' element={<Work />} />
           <Route path='/finance' element={<Finance />} />
             <Route path='/relationships' element={<Relationships />} />
+            <Route path="/post/:id" element={<FromDbPage />} />
               <Route path='/faith' element={<Faith />} />
 
     </Routes>
