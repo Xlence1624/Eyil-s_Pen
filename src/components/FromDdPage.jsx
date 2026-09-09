@@ -370,7 +370,7 @@ export default function FromDbPage() {
           `https://herblogg.vercel.app/api/post/${id}`
         );
 
-        setArticle(response.data);
+        setArticle(response.data.post);
       } catch (error) {
         console.error("Error fetching post:", error);
 
@@ -515,7 +515,7 @@ export default function FromDbPage() {
             </h1>
 
             <p className="article-deck">
-              {article.excerpt}
+              {article.excerpt || article.content?.slice(0, 160)}
             </p>
 
             <div className="article-author-row">
@@ -526,11 +526,11 @@ export default function FromDbPage() {
 
               <div>
                 <div className="author-name">
-                  {article.author}
+                  {article.author?.name || article.author}
                 </div>
 
                 <div className="author-meta">
-                  {article.date}
+                  {article.date || article.createdAt}
                 </div>
               </div>
 
@@ -796,5 +796,3 @@ export default function FromDbPage() {
     </>
   );
 }
-
-
