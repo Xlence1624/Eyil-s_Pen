@@ -54,7 +54,7 @@ const Everything = () => {
             </span> */}
 
             <h1>
-Welcome to my mind, one post at a time.         </h1>
+  Everything else that shapes how we see life.       </h1>
 
             <div className="gold-line" />
 
