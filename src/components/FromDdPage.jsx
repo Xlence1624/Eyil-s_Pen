@@ -1,350 +1,12 @@
-// import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
-
-// import Header from "./Header.jsx";
-// import Newsletter from "./NewsLetter.jsx";
-
-// import Footer from "./Footer.jsx";
-
-// import { blog_data } from "../data/Articles.js";
-// import { useNavigate } from "react-router-dom";
-// import Comments from "./Comments.jsx";
-// import axios from "../api/axios.js;"
-
-// export default function FromDbPage() {
-
-
-// const { id } = useParams();
-  
-//  useEffect(() => {
-//     // Make the Axios GET request
-//     axios.get('https://herblogg.vercel.app/api/post')
-//       .then(response => {
-//         setPost(response.data); // Axios wraps data in response.data
-//       })
-//       .catch(error => {
-//         console.error("Error fetching data with axios", error);
-//       });
-//   }, [id]);
-// const [post, setPost] = useState([]);
-// const article = post.find((item) => String(item._id) === String(id));
-
-
-//   const navigate = useNavigate();
-  
-
-//   const [progress, setProgress] = useState(0);
-
-//   const [comments, setComments] = useState([
-//   {
-//     id: 1,
-//     author: "Michael",
-//     text: "Great article!",
-//   },
-// ]);
-
-// const [newComment, setNewComment] = useState("");
-
-
-
-// const handleAddComment = () => {
-//   if (!newComment.trim()) return;
-
-//   const comment = {
-//     id: Date.now(),
-//     author: "Guest User",
-//     text: newComment,
-//   };
-
-//   setComments((prevComments) => [
-//     ...prevComments,
-//     comment,
-//   ]);
-
-//   setNewComment("");
-// };
-
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-
-//     const handleScroll = () => {
-//       const scrollTop = window.scrollY;
-
-//       const documentHeight =
-//         document.documentElement.scrollHeight - window.innerHeight;
-
-//       const percentage =
-//         documentHeight > 0 ? (scrollTop / documentHeight) * 100 : 0;
-
-//       setProgress(Math.min(100, percentage));
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   useEffect(() => {
-//     if (article) {
-//       document.title = `${article.title} — eyilzpen`;
-//     }
-//   }, [article]);
-
-//   if (!article) {
-//     return (
-//       <>
-//         <main className="article-404">
-//           <span className="eyebrow">404</span>
-
-//           <h1>This story seems to have wandered off.</h1>
-
-//           <a href="/" className="btn btn-primary">
-//             Back to eyilzpen
-//           </a>
-//         </main>
-
-//         <Footer />
-//       </>
-//     );
-//   }
-
-//   return (
-//     <>
-//       {/* READING PROGRESS */}
-
-//       <div className="reading-progress" style={{ width: `${progress}%` }} />
-
-       
-
-//       <main>
-//         {/* =====================================
-//             ARTICLE HERO
-//         ===================================== */}
-
-//         <header className="article-hero">
-//           <div className="article-hero-inner">
-//             <div className="article-category-row">
-//               <span className="eyebrow">{ post.category}</span>
-
-//               <span className="article-separator">/</span>
-
-//               <span>{article.readTime}</span>
-//             </div>
-
-//             <h1>{article.title}</h1>
-
-//             <p className="article-deck">{article.excerpt}</p>
-
-//             <div className="article-author-row">
-//               <div className="author-avatar">E</div>
-
-//               <div>
-//                 <div className="author-name">{article.author}</div>
-
-//                 <div className="author-meta">{article.date }</div>
-//               </div>
-//             </div>
-//           </div>
-//         </header>
-
-//         {/* =====================================
-//             HERO IMAGE
-//         ===================================== */}
-
-//         <figure className="article-cover ">
-//           <img src={article.image || post.image} alt={article.title || post.title} />
-
-//           {/* <figcaption>{article.category}</figcaption> */}
-//         </figure>
-
-//         {/* =====================================
-//             CONTENT AREA
-//         ===================================== */}
-
-//         <section className="article-layout">
-//           {/* LEFT SIDEBAR */}
-
-//           <aside className="article-sidebar">
-//             <div className="sidebar-inner">
-//               <span className="sidebar-label"></span>
-
-//               <nav>
-//                 <a href="#beginning">The intro</a>
-
-//                 <a href="#repetition">The quiet power of repetition</a>
-
-//                 <a href="#becoming">Who are you becoming?</a>
-
-//                 <a href="#choose">Choose again</a>
-//               </nav>
-
-//               <div className="sidebar-share">
-//                 <span className="sidebar-label">Share</span>
-
-//                 <button>X</button>
-
-//                 <button>in</button>
-
-//                 <button
-//                   onClick={() =>
-//                     navigator.clipboard.writeText(window.location.href)
-//                   }
-//                 >
-//                   ↗
-//                 </button>
-//               </div>
-//             </div>
-//           </aside>
-
-//           {/* MAIN ARTICLE */}
-
-//           <article className="article-content">
-//             <div id="beginning" className="text-blue-100">
-//              <p dangerouslySetInnerHTML={{ __html: article.description}}></p>
-//             </div>
-
-//             {/* AUTHOR */}
-
-//             <div className="article-author-card">
-//               <div className="large-author-avatar">E</div>
-
-//               <div>
-//                 <span className="eyebrow">Written by</span>
-
-//                 <h3>IyanuOluwa T Araba</h3>
-
-//                 <p>
-//                   Thoughts on faith, relationships, lifestyle, work, money and
-//                   everything in between.
-//                 </p>
-//               </div>
-//             </div>
-//           </article>
-//         </section>
-
-//         <Comments/>
-
-// {/* 
-//         <textarea
-//   value={newComment}
-//   onChange={(e) => setNewComment(e.target.value)}
-//   placeholder="Write a comment..."
-// />
-
-// <button onClick={handleAddComment}>
-//   Post Comment
-// </button>
-
-
-
-// <div className="comments">
-//   {comments.map((comment) => (
-//     <div key={comment.id}>
-//       <h4>{comment.author}</h4>
-//       <p>{comment.text}</p>
-//     </div>
-//   ))}
-// </div> */}
-
-//         {/* =====================================
-//             RELATED STORIES
-//         ===================================== */}
-
-//         <section className="article-related">
-//           <div className="container">
-//             <div className="related-heading">
-//               <div>
-//                 <span className="eyebrow">Keep Reading</span>
-
-//                 <h2>You might also like</h2>
-//               </div>
-
-//               <p onClick={() => navigate("/everything")} className="btn btn-outline">
-//                 All essays
-//               </p>
-//             </div>
-
-//             <div className="related-grid">
-//               <a
-//                 href="/articles/lead-a-family-spiritually"
-//                 className="related-card"
-//               >
-//                 <span className="eyebrow">Faith</span>
-
-//                 <h3>What Does It Really Mean to Lead a Family Spiritually?</h3>
-
-//                 <span>Read essay →</span>
-//               </a>
-
-//               <a
-//                 href="/articles/your-salary-is-not-your-wealth"
-//                 className="related-card"
-//               >
-//                 <span className="eyebrow">Finance</span>
-
-//                 <h3>Your Salary Is Not Your Wealth</h3>
-
-//                 <span>Read essay →</span>
-//               </a>
-
-//               <a
-//                 href="/articles/sometimes-love-is-not-the-problem"
-//                 className="related-card"
-//               >
-//                 <span className="eyebrow">Relationships</span>
-
-//                 <h3>Sometimes Love Is Not the Problem</h3>
-
-//                 <span>Read essay →</span>
-//               </a>
-//             </div>
-//           </div>
-//         </section>
-
-//         <Newsletter />
-//       </main>
-
-//       <section className="image-strip ">
-//         <img
-//           src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=700&q=80"
-//           alt=""
-//         />
-
-//         <img
-//           src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80"
-//           alt=""
-//         />
-
-//         <img
-//           src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80"
-//           alt=""
-//         />
-
-//         <img
-//           src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=700&q=80"
-//           alt=""
-//         />
-
-//         <img
-//           src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=80"
-//           alt=""
-//         />
-//       </section>
-
-//       <Footer />
-//     </>
-//   );
-// }
-
-
-
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import axios from "axios";
-import header from "../components/Header.jsx";
+import axios from "../api/axios.js";
+
 import Newsletter from "./NewsLetter.jsx";
 import Footer from "./Footer.jsx";
 import Comments from "./Comments.jsx";
+import Header from "../components/Header.jsx";
+import Markdown from "react-markdown"
 
 export default function FromDbPage() {
   const { id } = useParams();
@@ -355,6 +17,61 @@ export default function FromDbPage() {
   const [error, setError] = useState("");
 
   const [progress, setProgress] = useState(0);
+
+
+
+
+
+
+  // Share functionality
+
+  // Current URL of the article
+const shareUrl = window.location.href;
+const shareTitle = article?.post?.title || "Check out this article";
+
+// 1. Native Web Share API (Mobile / Modern Browsers)
+const handleNativeShare = async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: shareTitle,
+        url: shareUrl,
+      });
+    } catch (err) {
+      if (err.name !== "AbortError") {
+        console.error("Error sharing:", err);
+      }
+    }
+  } else {
+    handleCopyLink();
+  }
+};
+
+// 2. Share to X (Twitter)
+const handleShareX = () => {
+  const url = `https://x.com/intent/tweet?text=${encodeURIComponent(
+    shareTitle
+  )}&url=${encodeURIComponent(shareUrl)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+};
+
+// 3. Share to LinkedIn
+const handleShareLinkedIn = () => {
+  const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+    shareUrl
+  )}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+};
+
+// 4. Copy Direct Link to Clipboard
+const handleCopyLink = async () => {
+  try {
+    await navigator.clipboard.writeText(shareUrl);
+    alert("Link copied to clipboard!");
+  } catch (err) {
+    console.error("Failed to copy link:", err);
+  }
+};
 
   /*
    * ==========================================
@@ -371,7 +88,7 @@ export default function FromDbPage() {
         );
 
         setArticle(response.data);
-      } catch (error) {
+       } catch (error) {
         console.error("Error fetching post:", error);
 
         setError("Unable to load this article.");
@@ -493,12 +210,14 @@ export default function FromDbPage() {
         {/* =====================================
             ARTICLE HERO
         ===================================== */}
+<Header/>
+
         <header className="article-hero">
           <div className="article-hero-inner">
 
             <div className="article-category-row">
               <span className="eyebrow">
-                {article.category}
+                {article.post.category} 
               </span>
 
               <span className="article-separator">
@@ -506,16 +225,17 @@ export default function FromDbPage() {
               </span>
 
               <span>
-                {article.readTime}
+                {article.post.readTime} Minutes read
+               
               </span>
             </div>
 
             <h1>
-              {article.title}
+              {article.post.title}
             </h1>
 
             <p className="article-deck">
-              {article.excerpt}
+              {article.post.excerpt}
             </p>
 
             <div className="article-author-row">
@@ -525,12 +245,10 @@ export default function FromDbPage() {
               </div>
 
               <div>
-                <div className="author-name">
-                  {article.author}
-                </div>
+               
 
                 <div className="author-meta">
-                  {article.date}
+                  {article.post.date}
                 </div>
               </div>
 
@@ -545,8 +263,8 @@ export default function FromDbPage() {
         <figure className="article-cover">
 
           <img
-            src={article.image}
-            alt={article.title}
+            src={article.post.image}
+            alt={article.post.title}
           />
 
         </figure>
@@ -563,52 +281,59 @@ export default function FromDbPage() {
             <div className="sidebar-inner">
 
               <span className="sidebar-label">
-                Contents
+          
               </span>
 
               <nav>
                 <a href="#beginning">
-                  The intro
+                    {article.post.progressStamps[0]}
                 </a>
 
                 <a href="#repetition">
-                  The quiet power of repetition
+                 {article.post.progressStamps[1]}
                 </a>
 
                 <a href="#becoming">
-                  Who are you becoming?
+                 {article.post.progressStamps[2]}
                 </a>
 
                 <a href="#choose">
-                  Choose again
+                 {article.post.progressStamps[3]}
                 </a>
               </nav>
+<div className="sidebar-share">
+  <span className="sidebar-label">
+    Share
+  </span>
 
-              <div className="sidebar-share">
+  {/* Share to X (Twitter) */}
+  <button 
+    onClick={handleShareX}
+    title="Share on X"
+    aria-label="Share on X"
+  >
+    X
+  </button>
 
-                <span className="sidebar-label">
-                  Share
-                </span>
+  {/* Share to LinkedIn */}
+  <button 
+    onClick={handleShareLinkedIn}
+    title="Share on LinkedIn"
+    aria-label="Share on LinkedIn"
+  >
+    in
+  </button>
 
-                <button>
-                  X
-                </button>
-
-                <button>
-                  in
-                </button>
-
-                <button
-                  onClick={() =>
-                    navigator.clipboard.writeText(
-                      window.location.href
-                    )
-                  }
-                >
-                  ↗
-                </button>
-
-              </div>
+  {/* Native Share or Copy Link */}
+  <button 
+    onClick={handleNativeShare}
+    title="Share or Copy Link"
+    aria-label="Share or Copy Link"
+  >
+    ↗
+  </button>
+</div>
+             
 
             </div>
 
@@ -618,19 +343,28 @@ export default function FromDbPage() {
           {/* MAIN ARTICLE */}
           <article className="article-content">
 
-            <div
-              id="beginning"
-              className="article-body"
-              // dangerouslySetInnerHTML={{
-              //   __html: article.description || article.content
-              // }}
-            >{article.content}</div> 
 
+        
+        
+             <div
+              id="beginning"
+              className="whitespace-pre-wrap "
+            
+           > <Markdown>{article.post.content}</Markdown></div>
+<div className="flex justify-center py-8 ">
+     <button
+          onClick={handleNativeShare}
+          disabled={loading}
+          className="px-4 py-1.5 bg-[#183c32] text-white font-medium  rounded disabled:opacity-50 sm:hidden"
+        >
+          Share → 
+        </button>
+</div>
             {/* AUTHOR */}
             <div className="article-author-card">
 
               <div className="large-author-avatar">
-                E
+                Eyils
               </div>
 
               <div>
@@ -644,9 +378,7 @@ export default function FromDbPage() {
                 </h3>
 
                 <p>
-                  Thoughts on faith, relationships,
-                  lifestyle, work, money and everything
-                  in between.
+                ME!!! …one who communicates better through writing and it is also my escape from anything, everything!
                 </p>
 
               </div>
