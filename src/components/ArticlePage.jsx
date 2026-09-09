@@ -33,7 +33,53 @@ const article = blog_data.find((item) => String(item._id) === String(id));
 
 const [newComment, setNewComment] = useState("");
 
+// Current URL of the article
+const shareUrl = window.location.href;
+const shareTitle = article?.post?.title || "Check out this article";
 
+// 1. Native Web Share API (Mobile / Modern Browsers)
+const handleNativeShare = async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: shareTitle,
+        url: shareUrl,
+      });
+    } catch (err) {
+      if (err.name !== "AbortError") {
+        console.error("Error sharing:", err);
+      }
+    }
+  } else {
+    handleCopyLink();
+  }
+};
+
+// 2. Share to X (Twitter)
+const handleShareX = () => {
+  const url = `https://x.com/intent/tweet?text=${encodeURIComponent(
+    shareTitle
+  )}&url=${encodeURIComponent(shareUrl)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+};
+
+// 3. Share to LinkedIn
+const handleShareLinkedIn = () => {
+  const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+    shareUrl
+  )}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+};
+
+// 4. Copy Direct Link to Clipboard
+const handleCopyLink = async () => {
+  try {
+    await navigator.clipboard.writeText(shareUrl);
+    alert("Link copied to clipboard!");
+  } catch (err) {
+    console.error("Failed to copy link:", err);
+  }
+};
 
 const handleAddComment = () => {
   if (!newComment.trim()) return;
@@ -153,35 +199,38 @@ const handleAddComment = () => {
           {/* LEFT SIDEBAR */}
 
           <aside className="article-sidebar">
-            <div className="sidebar-inner">
-              <span className="sidebar-label"></span>
+          <div className="sidebar-share">
+  <span className="sidebar-label">
+    Share
+  </span>
 
-              <nav>
-                <a href="#beginning">The intro</a>
+  {/* Share to X (Twitter) */}
+  <button 
+    onClick={handleShareX}
+    title="Share on X"
+    aria-label="Share on X"
+  >
+    X
+  </button>
 
-                <a href="#repetition">The quiet power of repetition</a>
+  {/* Share to LinkedIn */}
+  <button 
+    onClick={handleShareLinkedIn}
+    title="Share on LinkedIn"
+    aria-label="Share on LinkedIn"
+  >
+    in
+  </button>
 
-                <a href="#becoming">Who are you becoming?</a>
-
-                <a href="#choose">Choose again</a>
-              </nav>
-
-              <div className="sidebar-share">
-                <span className="sidebar-label">Share</span>
-
-                <button>X</button>
-
-                <button>in</button>
-
-                <button
-                  onClick={() =>
-                    navigator.clipboard.writeText(window.location.href)
-                  }
-                >
-                  ↗
-                </button>
-              </div>
-            </div>
+  {/* Native Share or Copy Link */}
+  <button 
+    onClick={handleNativeShare}
+    title="Share or Copy Link"
+    aria-label="Share or Copy Link"
+  >
+    ↗
+  </button>
+</div>
           </aside>
 
           {/* MAIN ARTICLE */}
@@ -190,7 +239,15 @@ const handleAddComment = () => {
             <div id="beginning" className="text-blue-100">
              <p dangerouslySetInnerHTML={{ __html: article.description}}></p>
             </div>
-
+<div className="flex justify-center py-8 ">
+     <button
+          onClick={handleNativeShare}
+         
+          className="px-4 py-1.5 bg-[#183c32] text-white font-medium  rounded disabled:opacity-50 sm:hidden"
+        >
+          Share → 
+        </button>
+</div>
             {/* AUTHOR */}
 
             <div className="article-author-card">
@@ -202,8 +259,7 @@ const handleAddComment = () => {
                 <h3>IyanuOluwa T Araba</h3>
 
                 <p>
-                  Thoughts on faith, relationships, lifestyle, work, money and
-                  everything in between.
+               ME!!! …one who communicates better through writing and it is also my escape from anything, everything!
                 </p>
               </div>
             </div>

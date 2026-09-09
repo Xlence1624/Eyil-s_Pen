@@ -3,7 +3,7 @@ import { useState } from 'react';
 import AdminHeader from './AdminHeader.jsx';
 
 import Post from  "./Post.jsx"
-import PostOverview from "./PostOverview.jsx"
+// import PostOverview from "./PostOverview.jsx"
 const AdminDashboard = () => {
 const [activePage, setActivePage] = useState('dashboard');
     const dashboardicon = (
@@ -26,8 +26,7 @@ const [activePage, setActivePage] = useState('dashboard');
 
       const sidebarLinks = [
         { id: "dashboard", name: "Admin Dashboard",  icon: dashboardicon, component: <Post /> },
-        { id: "overview", name: "Posts Analytics",  icon: overviewicon, component: <PostOverview /> },
-        { id: "chat", name: "Comments approval", icon: chaticon, component: <PostOverview /> },
+      
     ];
 
   const currentPage = sidebarLinks.find(item => item.id === activePage);

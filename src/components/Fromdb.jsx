@@ -59,29 +59,39 @@ export default function Fromdb({ post }) {
   return (
     <article
       onClick={() => navigate(`/post/${_id}`)}
-      className="cursor-pointer"
+      className="cursor-pointe article-card"
     >
-      <img
+      <div className="card-image">
+  <img
         src={image}
         alt={title}
         className="w-full"
       />
-
-      <span className="eyebrow">
+      </div>
+    <div className="card-body">
+ <span className="eyebrow">
         {category}
       </span>
-
-      <h3>
+  <h3>
         {title}
       </h3>
-
-      <p>
+       <p className="mb-3 text-xs text-gray-500">
         {content?.slice(0, 100)}...
       </p>
-
-      <span>
-        {readTime} →
+   
+<div className="card-footer">
+  <span>{readTime} minutes</span>
+    <span className="arrow">
+        →
       </span>
+</div>
+     
+
+   </div>  
+
+     
+
+  
     </article>
   );
 }
