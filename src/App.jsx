@@ -13,6 +13,7 @@ import Finance from './components/Finance.jsx'
 import Relationships from './components/Relationships.jsx'
 import Faith from './components/Faith.jsx'
 import FromDbPage from './components/FromDdPage.jsx'
+import AdminUpdated from "./components/AdminUpdated.jsx"
 const App = () => {
   return (
     <div >
@@ -32,6 +33,7 @@ const App = () => {
             <Route path='/relationships' element={<Relationships />} />
             <Route path="/post/:id" element={<FromDbPage />} />
               <Route path='/faith' element={<Faith />} />
+               <Route path='/adup' element={<AdminUpdated />} />
 
     </Routes>
     </div>
