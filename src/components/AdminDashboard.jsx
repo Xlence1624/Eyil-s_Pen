@@ -26,8 +26,7 @@ const [activePage, setActivePage] = useState('dashboard');
 
       const sidebarLinks = [
         { id: "dashboard", name: "Admin Dashboard",  icon: dashboardicon, component: <Post /> },
-        // { id: "overview", name: "Posts Analytics",  icon: overviewicon, component: <PostOverview /> },
-        // { id: "chat", name: "Comments approval", icon: chaticon, component: <PostOverview /> },
+      
     ];
 
   const currentPage = sidebarLinks.find(item => item.id === activePage);
