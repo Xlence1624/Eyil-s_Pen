@@ -36,7 +36,11 @@ const Relationships = () => {
 
             <div className="gold-line" />
 
+<<<<<<< HEAD
          
+=======
+        
+>>>>>>> cd33afcd01382622c56afbde8f02c4ed864e098f
 
             <a
              onClick={() => navigate(`/everything`)} 
