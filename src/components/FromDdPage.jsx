@@ -265,6 +265,7 @@ const handleCopyLink = async () => {
           <img
             src={article.post.image}
             alt={article.post.title}
+            className="object-top "
           />
 
         </figure>

@@ -185,8 +185,8 @@ const handleAddComment = () => {
             HERO IMAGE
         ===================================== */}
 
-        <figure className="article-cover ">
-          <img src={article.image } alt={article.title} />
+        <figure className="article-cover object-top ">
+          <img src={article.image } alt={article.title} className="object-top" />
 
           {/* <figcaption>{article.category}</figcaption> */}
         </figure>

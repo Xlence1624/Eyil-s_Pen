@@ -9,7 +9,46 @@ import Footer from './Footer.jsx'
 import Scroll from './Scroll.jsx'
 import { useNavigate } from 'react-router-dom'
 import {assets} from "../assets/assets"
+import { useState, useEffect } from 'react'
+import axios from '../api/axios.js'
+import Fromdb from './Fromdb.jsx'
 const Work = () => {
+
+
+ const [work, setWork] = useState([])
+
+
+  //from db
+useEffect(() => {
+  // Make the Axios GET request
+  axios.get('https://herblogg.vercel.app/api/posts')
+    .then(response => {
+    
+     
+
+      // 2. Safely grab the array if it's nested inside an object property (like 'posts' or 'data')
+      const postsArray = Array.isArray(response.data) 
+        ? response.data 
+        : (response.data.posts || response.data.data || []);
+
+      setWork(postsArray); 
+    })
+    .catch(error => {
+      console.error("Error fetching data with axios", error);
+      setWork([]); // Fallback to an empty array to prevent crashing on network failure
+    });
+}, []);
+
+
+  const filteredWork = work.filter((article) => article.category === "Work" );
+
+
+
+
+
+
+
+
       const filteredArticles =
       blog_data.filter((article) => article.category === "work"   
           );
@@ -68,6 +107,16 @@ Purpose, career, productivity and making impact.       </h1>
 
           <div className="article-grid p-3">
      
+ {filteredWork.map((post) => (
+       <Fromdb
+          post={post}
+         key={post._id}
+         title={post.title}
+         content={post.content}
+         image={post.image}
+       />
+     ))}
+
                 {filteredArticles.map((article) => (
        <ArticleCard
          article={article}
