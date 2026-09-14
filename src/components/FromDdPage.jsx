@@ -352,18 +352,18 @@ const handleCopyLink = async () => {
            > <Markdown
            
             components={{
-      h2: ({ children, ...props }) => {
+      p: ({ children, ...props }) => {
         const id = String(children)
           .toLowerCase()
           .trim()
           .replace(/[^\w\s-]/g, "")
           .replace(/\s+/g, "-");
 
-        // return (
-        //   <h2 id={id} {...props}>
+        return (
+          <p id={id} {...props}>
            
-        //   </h2>
-        // );
+          </p>
+        );
       },
     }}
            >{article.post.content}</Markdown></div>
