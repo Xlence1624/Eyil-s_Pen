@@ -361,7 +361,7 @@ const handleCopyLink = async () => {
 
         return (
           <p id={id} {...props}>
-           
+           {children}
           </p>
         );
       },
