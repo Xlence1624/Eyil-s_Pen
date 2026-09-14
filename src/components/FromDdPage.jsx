@@ -352,7 +352,7 @@ const handleCopyLink = async () => {
            > <Markdown
            
             components={{
-      h6: ({ children, ...props }) => {
+      h2: ({ children, ...props }) => {
         const id = String(children)
           .toLowerCase()
           .trim()
@@ -360,9 +360,9 @@ const handleCopyLink = async () => {
           .replace(/\s+/g, "-");
 
         return (
-          <h6 id={id} {...props}>
+          <h2 id={id} {...props} className="hidden">
           {children}
-          </h6>
+          </h2>
         );
       },
     }}
