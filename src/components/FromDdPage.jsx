@@ -347,7 +347,7 @@ const handleCopyLink = async () => {
         
              <div
               
-              className="whitespace-pre-wrap "
+              className="whitespace-pre-wrap  "
             
            > <Markdown
            
@@ -359,11 +359,11 @@ const handleCopyLink = async () => {
           .replace(/[^\w\s-]/g, "")
           .replace(/\s+/g, "-");
 
-        return (
-          <h2 id={id} {...props} className="hidden" >
-          {children}
-          </h2>
-        );
+        // return (
+        //   <h2 id={id} {...props} className="hidden md:block " >
+        //   {/* {children} */}
+        //   </h2>
+        // );
       },
     }}
            >{article.post.content}</Markdown></div>
