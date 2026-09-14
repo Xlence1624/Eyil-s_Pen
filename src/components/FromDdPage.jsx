@@ -350,7 +350,24 @@ const handleCopyLink = async () => {
               id="beginning"
               className="whitespace-pre-wrap "
             
-           > <Markdown>{article.post.content}</Markdown></div>
+           > <Markdown
+           
+            components={{
+      h2: ({ children, ...props }) => {
+        const id = String(children)
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, "")
+          .replace(/\s+/g, "-");
+
+        return (
+          <h2 id={id} {...props}>
+            {children}
+          </h2>
+        );
+      },
+    }}
+           >{article.post.content}</Markdown></div>
 <div className="flex justify-center py-8 ">
      <button
           onClick={handleNativeShare}
