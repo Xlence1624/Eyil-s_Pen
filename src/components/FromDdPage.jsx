@@ -359,11 +359,11 @@ const handleCopyLink = async () => {
           .replace(/[^\w\s-]/g, "")
           .replace(/\s+/g, "-");
 
-        return (
-          <h2 id={id} {...props}>
+        // return (
+        //   <h2 id={id} {...props}>
            
-          </h2>
-        );
+        //   </h2>
+        // );
       },
     }}
            >{article.post.content}</Markdown></div>
