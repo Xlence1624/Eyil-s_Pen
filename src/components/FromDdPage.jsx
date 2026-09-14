@@ -286,21 +286,19 @@ const handleCopyLink = async () => {
               </span>
 
               <nav>
-                <a href={article.post.progressStamps[0]}>
-                    {article.post.progressStamps[0]}
-                </a>
+              {article.post.progressStamps.map((stamp) => {
+  const id = stamp
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
 
-                <a href=  {article.post.progressStamps[1]}>
-                 {article.post.progressStamps[1]}
-                </a>
-
-                <a href={article.post.progressStamps[2]}>
-                 {article.post.progressStamps[2]}
-                </a>
-
-                <a href={article.post.progressStamps[3]}>
-                 {article.post.progressStamps[3]}
-                </a>
+  return (
+    <a key={stamp} href={`#${id}`}>
+      {stamp}
+    </a>
+  );
+})}
               </nav>
 <div className="sidebar-share">
   <span className="sidebar-label">
