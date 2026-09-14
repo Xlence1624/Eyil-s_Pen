@@ -361,7 +361,7 @@ const handleCopyLink = async () => {
 
         return (
           <h2 id={id} {...props} className="hidden md:block" >
-          {children}
+          {/* {children} */}
           </h2>
         );
       },
