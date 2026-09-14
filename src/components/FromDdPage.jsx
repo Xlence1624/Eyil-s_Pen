@@ -360,8 +360,8 @@ const handleCopyLink = async () => {
           .replace(/\s+/g, "-");
 
         return (
-          <h2 id={id} {...props} className="hidden md:block" >
-          {/* {children} */}
+          <h2 id={id} {...props} className="hidden" >
+          {children}
           </h2>
         );
       },
