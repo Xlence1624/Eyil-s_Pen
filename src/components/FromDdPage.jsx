@@ -348,7 +348,7 @@ const handleCopyLink = async () => {
         
         
              <div
-              id="beginning"
+              
               className="whitespace-pre-wrap "
             
            > <Markdown
