@@ -25,7 +25,7 @@ export default function ArticleCard({ article }) {
         <h3>{title}</h3>
             
      
-        <p className="mb-3 text-xs text-gray-500" dangerouslySetInnerHTML={{ __html: description.slice(0,100) }} />
+        <p className="mb-3 text-xs text-gray-500" dangerouslySetInnerHTML={{ __html: description.slice(0,100) }}></p> 
     
 
         <div className="card-footer">

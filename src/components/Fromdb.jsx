@@ -65,7 +65,7 @@ export default function Fromdb({ post }) {
   <img
         src={image}
         alt={title}
-        className="w-full"
+        className="w-full object-top"
       />
       </div>
     <div className="card-body">
