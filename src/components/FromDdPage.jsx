@@ -359,14 +359,19 @@ const handleCopyLink = async () => {
           .replace(/[^\w\s-]/g, "")
           .replace(/\s+/g, "-");
 
-        return (
-          <h5 id={id} {...props}>
+        // return (
+        //   <h5 id={id} {...props}>
           
-          </h5>
-        );
+        //   </h5>
+        // );
       },
     }}
            >{article.post.content}</Markdown></div>
+
+
+
+{/* share button */}
+
 <div className="flex justify-center py-8 ">
      <button
           onClick={handleNativeShare}
