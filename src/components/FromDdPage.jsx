@@ -286,19 +286,19 @@ const handleCopyLink = async () => {
               </span>
 
               <nav>
-                <a href="#beginning">
+                <a href={article.post.progressStamps[0]}>
                     {article.post.progressStamps[0]}
                 </a>
 
-                <a href="#repetition">
+                <a href=  {article.post.progressStamps[1]}>
                  {article.post.progressStamps[1]}
                 </a>
 
-                <a href="#becoming">
+                <a href={article.post.progressStamps[2]}>
                  {article.post.progressStamps[2]}
                 </a>
 
-                <a href="#choose">
+                <a href={article.post.progressStamps[3]}>
                  {article.post.progressStamps[3]}
                 </a>
               </nav>
