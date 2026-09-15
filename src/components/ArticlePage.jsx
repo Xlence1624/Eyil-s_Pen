@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import { blog_data } from "../data/Articles.js";
 import { useNavigate } from "react-router-dom";
 import Comments from "./Comments.jsx";
+import {assets} from "../assets/assets"
 
 
 export default function ArticlePage() {
@@ -251,7 +252,7 @@ const handleAddComment = () => {
             {/* AUTHOR */}
 
             <div className="article-author-card">
-              <div className="large-author-avatar">E</div>
+<div>    <img src={assets.logo} alt="" className="h-30 cursor-pointer " onClick={() => navigate("/")}/></div> 
 
               <div>
                 <span className="eyebrow">Written by</span>
