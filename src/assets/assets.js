@@ -11,7 +11,7 @@ import blog_pic_10 from './blog_pic_10.png';
 import facebook_icon from './facebook_icon.svg'
 import googleplus_icon from './googleplus_icon.svg'
 import twitter_icon from './twitter_icon.svg'
-import logo from './logo.svg'
+import logo from './eyilzLogo.png'
 import arrow from './arrow.svg'
 import logo_light from './logo_light.svg'
 import blog_icon from './blog_icon.png'
@@ -31,7 +31,7 @@ import dashboard_icon_1 from './dashboard_icon_1.svg'
 import dashboard_icon_2 from './dashboard_icon_2.svg'
 import dashboard_icon_3 from './dashboard_icon_3.svg'
 import dashboard_icon_4 from './dashboard_icon_4.svg'
-import eyilslogo from './eyils_logo.jpg'
+
 import pen_icon from './whitepen.png'
 import Iyanu from './Iyanu.jpg'
 import office from './green-business-meeting-working-room-office-building-with-bookshelf.jpg'
@@ -49,7 +49,7 @@ export const assets = {
     office,
     Iyanu,
     pen_icon,
-    eyilslogo,
+
     facebook_icon,
     googleplus_icon,
     twitter_icon,

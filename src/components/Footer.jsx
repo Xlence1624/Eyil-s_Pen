@@ -12,10 +12,8 @@ const navigate = useNavigate();
           
           <div className="footer-brand">
             <div className="footer-logo">Eyilzpen</div>
-            <p>
-              Faith. Relationships. Lifestyle.
-              Work. Finance. Everything in between.
-            </p>
+             <p>
+           I write about the things that make us human—work, life, faith, finance, relationships and ‘everything in between.’</p> 
           </div>
 
           {/* Semantic <nav> added for better SEO and Accessibility */}

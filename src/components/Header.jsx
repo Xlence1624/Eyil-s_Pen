@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { assets } from "../assets/assets";
 
 // const navigation = [
 //   "Faith",
@@ -78,11 +79,11 @@ const navigate = useNavigate()
 
   return (
     <header className="site-header">
-      <div className="container nav">
+      <div className="flex items-center pr-8 justify-between md:justify-center   ">
 
-        <a href="/" className="logo">
-          Eyilzpen
-        </a>
+     <div>    <img src={assets.logo} alt="" className="h-30 cursor-pointer " onClick={() => navigate("/")}/></div> 
+   
+     
 
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           {navigation.map((item) => (
