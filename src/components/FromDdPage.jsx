@@ -393,7 +393,7 @@ const handleCopyLink = async () => {
                 </span>
 
                 <h3>
-                  IyanuOluwa T Araba
+               Iyanuoluwa Araba
                 </h3>
 
                 <p>

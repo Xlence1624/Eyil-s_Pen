@@ -256,7 +256,7 @@ const handleAddComment = () => {
               <div>
                 <span className="eyebrow">Written by</span>
 
-                <h3>IyanuOluwa T Araba</h3>
+                <h3>Iyanuoluwa Araba</h3>
 
                 <p>
                ME!!! …one who communicates better through writing and it is also my escape from anything, everything!
