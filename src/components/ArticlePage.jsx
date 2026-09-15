@@ -259,7 +259,7 @@ const handleAddComment = () => {
                 <h3>Iyanuoluwa Araba</h3>
 
                 <p>
-               ME!!! …one who communicates better through writing and it is also my escape from anything, everything!
+            I write about the things that make us human—work, life, faith, finance, relationships and ‘everything in between.
                 </p>
               </div>
             </div>
