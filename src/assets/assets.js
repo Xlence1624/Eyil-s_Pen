@@ -40,8 +40,10 @@ import finance from './finance.jpg'
 import faith from './faith.jpg'
 import faith2 from './faith2.jpg'
 import relationship from './relationship.jpg'
+import everything from './everything.jpg'
 
 export const assets = {
+    everything,
     faith2,
     faith,
     relationship,

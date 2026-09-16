@@ -19,7 +19,7 @@ import { assets } from "../assets/assets";
     name: ' "Everything in between" ',
     description:
       "Everything else that shapes how we see life.",
-      to: "/everything"
+      to: "/everythingInBetween"
   },
 
 
