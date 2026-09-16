@@ -57,7 +57,7 @@ const EverythingInBetween = () => {
               <div className="gold-line" />
 
               <a
-                onClick={() => navigate(`/every`)}
+                onClick={() => navigate(`/everything`)}
                 className="btn btn-primary"
               >
                 Explore <span>→</span>
