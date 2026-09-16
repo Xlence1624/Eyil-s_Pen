@@ -34,7 +34,7 @@ const EverythingInBetween = () => {
       });
   }, []);
 
-  const filteredEverything = everything.filter((article) => article.category === "Every");
+  const filteredEverything = everything.filter((article) => article.category === "Everything In Between");
 
   //from the code asset
 

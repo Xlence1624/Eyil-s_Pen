@@ -232,7 +232,7 @@ const Post = () => {
             onChange={handleChange}
           >
             <option value="">Select Category</option>
-     <option value="Every">Everything in Between</option>
+     <option value="Everything In Between">Everything in Between</option>
             <option value="Faith">Faith</option>
             <option value="Work">Work</option>
             <option value="Finance">Finance</option>
