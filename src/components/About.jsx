@@ -1,3 +1,4 @@
+
 import { assets } from "../assets/assets";
 
 
@@ -5,7 +6,7 @@ export default function About() {
   return (
     <section className="about">
 
-      <div className="container">
+      <div className="container mx-40">
 
         <div className="about-grid">
 
