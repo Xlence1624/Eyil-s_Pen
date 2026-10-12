@@ -14,6 +14,7 @@ import Relationships from './components/Relationships.jsx'
 import Faith from './components/Faith.jsx'
 import FromDbPage from './components/FromDdPage.jsx'
 import AdminUpdated from "./components/AdminUpdated.jsx"
+import EverythingInBetween from './components/EverythingInBetween.jsx'
 const App = () => {
   return (
     <div >
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/post/:id" element={<FromDbPage />} />
               <Route path='/faith' element={<Faith />} />
                <Route path='/adup' element={<AdminUpdated />} />
+               <Route path='/everythingInBetween' element={<EverythingInBetween />} />
 
     </Routes>
     </div>

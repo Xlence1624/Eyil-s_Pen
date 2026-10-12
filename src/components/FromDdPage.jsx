@@ -7,6 +7,7 @@ import Footer from "./Footer.jsx";
 import Comments from "./Comments.jsx";
 import Header from "../components/Header.jsx";
 import Markdown from "react-markdown"
+import {assets} from "../assets/assets"
 
 export default function FromDbPage() {
   const { id } = useParams();
@@ -383,10 +384,7 @@ const handleCopyLink = async () => {
 </div>
             {/* AUTHOR */}
             <div className="article-author-card">
-
-              <div className="large-author-avatar">
-                Eyils
-              </div>
+ <div>    <img src={assets.logo} alt="" className="h-30 cursor-pointer " onClick={() => navigate("/")}/></div> 
 
               <div>
 
@@ -395,11 +393,11 @@ const handleCopyLink = async () => {
                 </span>
 
                 <h3>
-                  IyanuOluwa T Araba
+               Iyanuoluwa Araba
                 </h3>
 
                 <p>
-                ME!!! …one who communicates better through writing and it is also my escape from anything, everything!
+          I write about the things that make us human—work, life, faith, finance, relationships and ‘everything in between.
                 </p>
 
               </div>

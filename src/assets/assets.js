@@ -11,7 +11,7 @@ import blog_pic_10 from './blog_pic_10.png';
 import facebook_icon from './facebook_icon.svg'
 import googleplus_icon from './googleplus_icon.svg'
 import twitter_icon from './twitter_icon.svg'
-import logo from './logo.svg'
+import logo from './IMG_9557.PNG'
 import arrow from './arrow.svg'
 import logo_light from './logo_light.svg'
 import blog_icon from './blog_icon.png'
@@ -40,7 +40,10 @@ import finance from './finance.jpg'
 import faith from './faith.jpg'
 import faith2 from './faith2.jpg'
 import relationship from './relationship.jpg'
+import everything from './everything.jpg'
+
 export const assets = {
+    everything,
     faith2,
     faith,
     relationship,
