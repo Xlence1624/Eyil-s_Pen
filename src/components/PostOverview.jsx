@@ -9,7 +9,7 @@ const PostOverview = () => {
     ];
 
     return (
-        <div className="flex-1  flex flex-col justify-between">
+        <div className="flex-1  flex flex-col justify-between ">
             <div className="w-full ">
                
                 <div className="flex flex-col items-center max-w-4xl w-full overflow-hidden rounded-md bg-white border border-gray-500/20">
@@ -27,7 +27,7 @@ const PostOverview = () => {
                                 <tr key={index} className="border-t border-gray-500/20">
                                     <td className="md:px-4 pl-2 md:pl-4 py-3 flex items-center space-x-3 truncate">
                                         <div className="border border-gray-300 rounded overflow-hidden">
-                                            <img src={product.image} alt="Product" className="w-16" />
+                                            <img src={product.image} alt="Product" className=" w-1 h-4" />
                                         </div>
                                         <span className="truncate max-sm:hidden w-full">{product.name}</span>
                                     </td>

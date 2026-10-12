@@ -3,6 +3,7 @@ import { useState } from 'react';
 import AdminHeader from './AdminHeader.jsx';
 
 import Post from  "./Post.jsx"
+import PostOverview from "./PostOverview.jsx"
 // import PostOverview from "./PostOverview.jsx"
 const AdminDashboard = () => {
 const [activePage, setActivePage] = useState('dashboard');
@@ -26,7 +27,7 @@ const [activePage, setActivePage] = useState('dashboard');
 
       const sidebarLinks = [
         { id: "dashboard", name: "Admin Dashboard",  icon: dashboardicon, component: <Post /> },
-      
+        { id: "overview", name: "Post Overview", icon: overviewicon, component: <PostOverview /> },
     ];
 
   const currentPage = sidebarLinks.find(item => item.id === activePage);
@@ -63,7 +64,7 @@ const [activePage, setActivePage] = useState('dashboard');
                 ))}
                
             </aside>
-<div className="flex-1 ">
+<div className="w-full ">
                 {currentPage ? currentPage.component : <Post />}
 </div>
             </div>
